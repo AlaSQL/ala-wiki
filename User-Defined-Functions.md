@@ -67,7 +67,7 @@ See more examples here:
 * [test266.js](https://github.com/agershun/alasql/blob/develop/test/test266.js)
 
   
-From 3.8 aggretating functions can be set via a SQL statement with the following syntaxes:
+From 3.8 aggretating functions can be set via a async SQL statement with the following syntaxes:
 
 ```sql
 CREATE (AGGREATE|AGGREGATOR) MyAggr AS ``function(value, accumulator, stage) { ... }``;
