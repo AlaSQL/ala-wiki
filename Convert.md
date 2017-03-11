@@ -1,4 +1,4 @@
-# Keyword `CONVERT
+# Keyword `CONVERT`
 
 Syntax:
 ```sql
@@ -34,7 +34,7 @@ alasql('SET @d = DATE("01/08/2015 12:34:56.789"); \
                 CONVERT(STRING,@d,112)\
             ');
 ```
-See the example [in jsFiddle](http://jsfiddle.net/agershun/qytn1n0L/)
+See the example [in jsFiddle](http://jsfiddle.net/fr4fc8gL/)
 
 
 To cast types to Number you can use one of three forms:
