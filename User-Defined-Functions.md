@@ -27,7 +27,7 @@ var res = alasql('SELECT * FROM ? WHERE myfilter(Phase)',[data]);
 ```
 See the working example [in jsFiddle](http://jsfiddle.net/agershun/1nccgs6n/3/)
 
-Functions can be set via a SQL statement with the following syntax:
+From 3.8 functions can be set via a SQL statement with the following syntax:
 
 ```sql
 CREATE FUNCTION cubic AS ``function(x) { return x*x*x; }``;
@@ -67,7 +67,7 @@ See more examples here:
 * [test266.js](https://github.com/agershun/alasql/blob/develop/test/test266.js)
 
   
-Aggretating functions can be set via a SQL statement with the following syntaxes:
+From 3.8 aggretating functions can be set via a SQL statement with the following syntaxes:
 
 ```sql
 CREATE (AGGREATE|AGGREGATOR) MyAggr AS ``function(value, accumulator, stage) { ... }``;
