@@ -35,9 +35,6 @@ Setting them via the `SET` statement is the only option when running from the co
 * alasql.options.cache = true; // Use cache
 * alasql.options.nocount = false;// for SET NOCOUNT OFF
 * alasql.options.nan = false;// Check for NaN and convert it to undefined
-* alasql.options.autoExtFilenamesOnRead = true; // Add extension if given filename does not include one.  
-* alasql.options.autoExtFilenamesOnWrite = true; // Add extension if given filename does not include one.  
-
 
 #### Compatibility flags (not in use at the moment)
 * alasql.options.tsql = true;
