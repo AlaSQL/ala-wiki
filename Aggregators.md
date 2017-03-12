@@ -15,7 +15,7 @@ Examples:
     SELECT COUNT()
     SELECT COUNT(one)
     SELECT COUNT(*)
-````
+```
 
 ## Non-standard 
 * AGGR() – operations on aggregated values
