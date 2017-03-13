@@ -1,4 +1,4 @@
-AlaSQL has XLSXML() export function with coloring functionality:
+AlaSQL has XLSXML() export function with coloring functionality. The correct extension for the files is `.xls`.
 
 ```js
 var data = [{city:"London",population:5000000}, 
@@ -15,7 +15,9 @@ var opts = {
     style: {Font:{Color:"#00FFFF"}}
   }}}
 };
-alasql('SELECT * INTO XLSXML("restest280b.xlsx",?) FROM ?',[opts,data]);
+alasql('SELECT * INTO XLSXML("restest280b.xls",?) FROM ?',[opts,data]);
 ```
+
+Test this example in https://jsfiddle.net/vL4tsaef/1/
 
 Here you can define style for any column, row, or cell in the sheet.
