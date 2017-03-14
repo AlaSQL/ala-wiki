@@ -14,7 +14,7 @@ You can read CSV or XLSX data with AlaSQL library. It uses [js-xlsx](js-xlsx) li
 
 If you read data from server:
 ```js
-    alasql('SELECT * FROM XLSX("data.xlsx", {headers:true})',[],function(data){
+    alasql(['SELECT * FROM XLSX("data/myfile")']).then(function(data){
         // process data array
     });
 ```

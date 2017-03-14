@@ -5,7 +5,7 @@ You can use [AlaSQL][1] library to load and parse CSV data from server or from d
 ####From Server 
 You can and parse data with CSV() function:
 ```js
-    alasql('SELECT * FROM CSV("mydata.csv",{headers:true})',[],function(data) {
+    alasql(['SELECT * FROM CSV("mydata")']).then(function(data) {
         // Use data
     });
 ```
@@ -18,9 +18,9 @@ If you want to upload data from desktop you can use the following code:
      <input id="readfile" type="file" onchange="loadFile(event)"/>
      <script>
          function loadFile(event) {
-             alasql('SELECT * FROM FILE(?,{headers:true})',[event],function(data){
-            // Process data here
-             });
+            alasql(['SELECT * FROM FILE(?,{headers:true})',[event]]).then(function(data){
+            	// Process data here
+            });
          }
      </script>
 ```

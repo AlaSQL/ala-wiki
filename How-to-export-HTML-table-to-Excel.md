@@ -12,8 +12,8 @@ See the working example below or [in jsFiddle](http://jsfiddle.net/agershun/arkf
     }
 ```
 ```html
-    <script src="http://alasql.org/console/alasql.min.js"></script>
-    <script src="http://alasql.org/console/xlsx.core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/0.3.7/alasql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.9.2/xlsx.core.min.js"></script>
     <button onclick="exportExcel()">Export table to Excel</button>
     <p>Source table</p>
     <table id="MyInquires">

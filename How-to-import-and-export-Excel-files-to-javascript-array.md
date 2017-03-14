@@ -10,15 +10,16 @@ I'm currently looking for a fast and efficient way to import an Excel file into 
 
 For import:
 ```js
-    alasql('SELECT * FROM XLSX("srcfile.xlsx",{headers:true})',[],function(data){
+    alasql('SELECT * FROM XLSX("srcfileName")'].then(function(data){
         console.log(data);
     });
 ```
 For export:
 ```js
     var data = [{a:!,b:10},{a:2,b:20}];
-    alasql('SELECT * INTO XLSX("myfile.xlsx",{headers:true}) FROM ?',[data]);
+    alasql('SELECT * INTO XLSX("myfileName") FROM ?',[data]);
 ```
+
 Import and export with interim data processing:
 ```js
     alasql('SELECT * \

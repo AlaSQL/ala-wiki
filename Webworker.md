@@ -18,10 +18,11 @@ Try this example [here](http://alasql.org/demo/012worker/).
 
 If you want to load scripts into webworker you can use REQUIRE statement:
 ```sql
-    alasql('REQUIRE "script1.js", "script2.js" ',[],function(){
-        // sql used script1.js
+    alasql(['REQUIRE "script1.js", "script2.js" ']).then(function(){
+        // sql can use script1.js
     });
 ```
+
 Usually this required for user-defined functions, like:
 
 ```js
@@ -36,7 +37,7 @@ Please note that webworkers does not support localStorage so this is not support
     <script src="alasql.js"></script>
    <script>
         alasql.worker();
-        alasql('SELECT VALUE 1+1', [], function(res){
+        alasql(['SELECT VALUE 1+1'].then(function(res){
             console.log(res);
         });
     </script>

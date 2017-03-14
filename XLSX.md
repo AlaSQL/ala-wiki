@@ -1,9 +1,9 @@
 # `.XLSX` - Excel 2007 
 
-To work with `.xlsx` files, please invlude xlsx.js
+To work with `.xlsx` files, please include `xlsx` from https://cdnjs.com/libraries/xlsx
 
 ```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.core.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/X.Y.Z/xlsx.core.min.js"></script>
 ```
 
 Please note that when interacting with files AlaSQL [will run async](async). We strongly recommend you to [use the promise notation](promise).

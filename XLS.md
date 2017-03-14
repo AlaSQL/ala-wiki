@@ -25,7 +25,7 @@ Please know that we recommend exporting to [".xlsx"](XLSX) instead of ".xls" as 
       ]
     };
 
-    var res = alasql('SELECT * INTO XLS("restest257a.xls",?) FROM ?',[opts,data]); 
+    var res = alasql('SELECT * INTO XLS("restest257a",?) FROM ?',[opts,data]); 
 
 ```
 Please, see the example with advanced color syntax [in jsFiddle](https://jsfiddle.net/dsn9xobr/).
@@ -35,13 +35,7 @@ You can pass the object as a Blob:
     alasql('SELECT * FROM XLS(?,{headers:true}',[myblob]);
 
 
-To read `.xls` files, please include xls.js
+To read `.xls` files, please include the `xlsx` lib from https://cdnjs.com/libraries/xlsx
 
-```html
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xls/0.7.5/xls.core.min.js"></script>
-```
-
-
-----
 
 If you need Excel 2007 files please check out [[XLSX]]

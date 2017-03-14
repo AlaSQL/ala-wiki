@@ -12,9 +12,8 @@ You can use AlaSQL library to load and parse CSV data from server or from deskto
 
 ***FROM SERVER*** Here is an example of how to load data from CSV and pass it to Google Maps api (the full code and the result [you can see here](http://alasql.org/demo/009geo/)).
 ```js
-    alasql("SELECT * FROM CSV(
-      "https://cdn.rawgit.com/albertyw/avenews/master/old/data/average-latitude-longitude-countries.csv",
-      {headers:true})', [], function(country){
+    alasql(["SELECT * FROM CSV('https://cdn.rawgit.com/albertyw/avenews/master/old/data/average-latitude-longitude-countries.csv']).then(function(res){
+    	var country = res[0];
         var mapOptions = { zoom : 3, center : new google.maps.LatLng(40, 0),
             mapTypeId : google.maps.MapTypeId.ROADMAP
         };

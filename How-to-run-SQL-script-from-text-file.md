@@ -1,15 +1,17 @@
 # How to run SQL script from text file?
 
 ### Question
-I have all my SQL statements in text file. How to run it in AlaSQL?
+I have all my SQL statements in a text file. How to run it in AlaSQL?
 
 ### Answer
-You can use SOURCE statement:
+You can use [[SOURCE]] statement:
 ```js
     alasql('SOURCE "myfile.sql"');
 ```
 
-Please not that accessing files in a browser should be done async to give the best user experience: 
+Please not that accessing files in a browser should be done async:
 ```js
-    alasql('SOURCE "myfile.sql"',[],function(){ ... });
+    alasql(['SOURCE "myfile.sql"']).then(function(){ 
+    	... 
+    });
 ```

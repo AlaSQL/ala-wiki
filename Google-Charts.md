@@ -27,8 +27,8 @@ The plan is to use alaSQL to extract data from an excel spread sheet and use the
             data_cities.addRows(3);
             var row_Counter = 0;
 
-            alasql('SELECT * FROM XLSX("cities.xlsx", {headers:true, sheetid:"Cities", range:"A1:B4"})', 
-                [], function (xlData) {
+            alasql(['SELECT * FROM XLSX("cities.xlsx", {sheetid:"Cities", range:"A1:B4"})']).then(function(res){
+            	var xlData = res[0];
                 var items = [];
                 xlData.forEach(function (key, val) {
                     data_cities.setCell(row_Counter, 0, val.City);
@@ -60,3 +60,7 @@ The plan is to use alaSQL to extract data from an excel spread sheet and use the
            });
         };
     </script>
+
+```
+
+please fine `xlsx` at https://cdnjs.com/libraries/xlsx
