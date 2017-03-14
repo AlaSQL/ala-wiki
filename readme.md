@@ -1,4 +1,4 @@
-_AlaSQL is an open source project and we appreciate any and all contributions we can get. Please help out._
+_AlaSQL is an open source project and we appreciate any and all contributions we can get. [Please help out](https://github.com/agershun/alasql/labels/Please%20help%20out%21)._
 
 _Got a question? Ask on [Stack Overflow](http://stackoverflow.com/questions/ask?tags=AlaSQL) and tag with "alasql"._
 
@@ -73,8 +73,8 @@ console.log(res); // [{"a":1,"b":40},{"a":2,"b":20}]
 ```
 
 ```js
-// C) Promise notation + read from file example
-alasql.promise('SELECT * FROM XLS("mydata.xls") WHERE lastname LIKE "A%" and city = "London" GROUP BY name ')
+// C) Read from file must be async (promise returned when sql given as array)
+alasql(['SELECT * FROM XLS("./data/mydata") WHERE lastname LIKE "A%" and city = "London" GROUP BY name '])
       .then(function(res){
            console.log(res); // output depends on mydata.xls
       }).catch(function(err){
@@ -250,16 +250,16 @@ AlaSQL extends "good old" SQL to make it closer to JavaScript. The "sugar" inclu
 
 ### Read and write Excel, and raw data files
 
-You can import from and export to CSV, TAB, TXT, and JSON files. Calls to files will always be [[async]] so the approach is to chain the queries if you have more than one:
+You can import from and export to CSV, TAB, TXT, and JSON files. File extensions can be omitted. Calls to files will always be [[async]] so the approach is to chain the queries if you have more than one:
 
 ```js
 var tabFile = 'mydata.tab'
 
 alasql.promise([
-		"select * from txt('mytext.txt') where [0] like 'M%'",
+		"select * from txt('MyFile.log') where [0] like 'M%'",
 		["select * from tab(?) order by [1]", [tabFile]],	// note how to pass parameter when promises are chained
-		"select [3] as city,[4] as population from csv('cities.csv')",
-		"select * from json('array.json')"
+		"select [3] as city,[4] as population from csv('./data/cities')",
+		"select * from json('../config/myJsonfile')"
 	]).then(function(results){
 		console.log(results)
 	}).catch(console.error)
@@ -274,11 +274,12 @@ AlaSQL can read (not write) SQLite data files if you include the [SQL.js](https:
     <script src="alasql.js"></script>
     <script src="sql.js"></script>
     <script>
-        alasql('ATTACH SQLITE DATABASE Chinook("Chinook_Sqlite.sqlite");\
-            USE Chinook; \
-            SELECT * FROM Genre',[],function(res){
+        alasql(['ATTACH SQLITE DATABASE Chinook("Chinook_Sqlite.sqlite")',
+            	'USE Chinook',
+            	'SELECT * FROM Genre'
+            ]).then(function(res){
                 console.log("Genres:",res.pop());
-        });
+        	});
     </script>
 ```
 
@@ -402,9 +403,12 @@ Probably, there are many of others. Please, help us to fix them by [submitting i
 
 ETL example:
 ```js
-    alasql('CREATE TABLE IF NOT EXISTS geo.country; \
-            SELECT * INTO geo.country FROM CSV("country.csv",{headers:true}); \
-            SELECT * INTO XLSX("asia.xlsx") FROM geo.country WHERE continent_name = "Asia"');
+    alasql(['CREATE TABLE IF NOT EXISTS geo.country',
+            'SELECT * INTO geo.country FROM CSV("country.csv",{headers:true})', 
+            'SELECT * INTO XLSX("asia.xlsx") FROM geo.country WHERE continent_name = "Asia"'
+          ).then(function(res){
+          		...
+          });
 ```
 
 
@@ -419,7 +423,7 @@ In the browser you can include `alasql-worker.min.js` instead of `alasql.min.js`
 <script src="alasql-worker.min.js"></script>
 <script>
 var arr = [{a:1},{a:2},{a:1}];
-	alasql('SELECT * FROM ?',[arr],function(data){
+	alasql([['SELECT * FROM ?',[arr]]]).then(function(data){
 		console.log(data);
 	});
 </script>    
@@ -433,9 +437,9 @@ Another option is to include the normal file but call alasql.worker() as the fir
 <script src="alasql.min.js"></script>
 <script>
      alasql.worker();
-     var res = alasql('select value 10',[],function(res){
+     var res = alasql(['select value 10']).then(function(res){
           console.log(res);
-     });
+     }).catch(console.error);
 </script>
 ```
 
