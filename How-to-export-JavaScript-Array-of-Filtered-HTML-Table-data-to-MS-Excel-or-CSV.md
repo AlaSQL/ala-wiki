@@ -13,8 +13,8 @@ You can use AlaSQL with [js-xlsx](js-xlsx) library to export data locally in XLS
 Below you can see a simple working example how to export data to XLSX format.
 
 ```html
-    <script src="http://alasql.org/console/alasql.min.js"></script>
-    <script src="http://alasql.org/console/xlsx.core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/0.3.7/alasql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.9.2/xlsx.core.min.js"></script>
     <button onclick="exportData()">Export data to Excel</button>
 ```
 ```js

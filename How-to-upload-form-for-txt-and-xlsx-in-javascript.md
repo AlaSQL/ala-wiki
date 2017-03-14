@@ -20,8 +20,8 @@ If you read data from server:
 ```
 If you are reading data from the browser:
 ```html
-    <script src="alasql.min.js"></script>
-    <script src="xlsx.core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/0.3.7/alasql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.9.2/xlsx.core.min.js"></script>
     <p>Select CSV file to read:</p>
     <input id="readfile" type="file" onchange="loadFile(event)"/>
     <script>

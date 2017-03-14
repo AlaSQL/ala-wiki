@@ -12,7 +12,7 @@ Usage:
 Samples:
   alasql 'select 2+2'
   alasql 'select count(*) from txt()' < city.txt
-  alasql 'select * into xlsx("city.xlsx") from txt("city.txt")'
+  alasql 'select * into xlsx("./data/city") from txt("city.txt")'
 ```
 
 
