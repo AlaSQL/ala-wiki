@@ -1,4 +1,4 @@
-_AlaSQL is an open source project and we appreciate any and all contributions we can get. [Please help out](https://github.com/agershun/alasql/labels/Please%20help%20out%21)._
+_AlaSQL is an open source project, and we appreciate any and all contributions we can get. [Please help out](https://github.com/agershun/alasql/labels/Please%20help%20out%21)._
 
 _Got a question? Ask on [Stack Overflow](http://stackoverflow.com/questions/ask?tags=AlaSQL) and tag with "alasql"._
 
@@ -21,7 +21,7 @@ _Got a question? Ask on [Stack Overflow](http://stackoverflow.com/questions/ask?
 
 AlaSQL - _( [à la](http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wikipedia.org/wiki/SQL) ) [ælæ ɛskju:ɛl]_ - is a free and open source SQL database for Javascript with a strong focus on query speed and data source flexibility for relational data, schemaless data, and graph data. It works in your browser, Node.js, IO.js and Cordova.
 
-The library is designed for:
+This library is designed for:
 
 * Fast in-memory SQL data processing for BI and ERP applications on fat clients
 * Easy ETL and options for persistency by data import / manipulation / export of several formats
@@ -32,7 +32,7 @@ The library is designed for:
 We focus on [speed](https://github.com/agershun/alasql/wiki/Speed) by taking advantage of the dynamic nature of JavaScript when building up queries. Real-world solutions demand flexibility regarding where data comes from and where it is to be stored. We focus on flexibility by making sure you can [import/export](https://github.com/agershun/alasql/wiki/Import-export) and query directly on data stored in Excel (both `.xls` and `.xlsx`), CSV, JSON, TAB, IndexedDB, LocalStorage, and SQLite files.
 
 
-The library adds the comfort of a full database engine to your JavaScript app. No, really - it's working towards a full database engine complying with [most of the SQL-99](https://github.com/agershun/alasql/wiki/Supported-SQL-statements) spiced up with additional syntax for handling NoSQL (schema-less) data and graph networks.
+The library adds the comfort of a full database engine to your JavaScript app. No, really - it's working towards a full database engine complying with [most of the SQL-99](https://github.com/agershun/alasql/wiki/Supported-SQL-statements) spiced up with an additional syntax for handling NoSQL (schema-less) data and graph networks.
 
 
 ```js
