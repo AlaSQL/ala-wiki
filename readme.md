@@ -694,7 +694,11 @@ MIT - see [MIT licence information](LICENSE)
 * [Andrey Gershun](http://github.com/agershun)
 * [Mathias Rangel Wulff](https://twitter.com/rangelwulff)
 
-_AlaSQL is an open source project and we appreciate any and all contributions we can get. If you feel like contributing, have a look at [CONTRIBUTING.md](https://github.com/agershun/alasql/blob/develop/CONTRIBUTING.md)._
+AlaSQL is an **OPEN Open Source Project**. This means that:
+
+> Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
+
+We appreciate any and all contributions we can get. If you feel like contributing, have a look at [CONTRIBUTING.md](https://github.com/agershun/alasql/blob/develop/CONTRIBUTING.md)._
 
 
 
