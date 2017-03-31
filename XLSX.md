@@ -123,7 +123,7 @@ To read blank column values from xls,xlsx and csv you can use this notation for 
 
 ----
 
-problem with dates when you read your file? Have a look at [this comment](https://github.com/agershun/alasql/issues/395#issuecomment-290392777)
+Problem with dates when you read your file? Have a look at [this comment](https://github.com/agershun/alasql/issues/395#issuecomment-290392777)
 
 ----
 
