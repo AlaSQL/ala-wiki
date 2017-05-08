@@ -8,7 +8,7 @@
 
 ### About AlaSQL
 
-AlaSQL applys SQL opperations to JavaScript arrays and objects therefore the library can best be described as a JavaScript SQL database. 
+AlaSQL applies SQL opperations to JavaScript arrays and objects therefore the library can best be described as a JavaScript SQL database.
 
 The API is designed for:
 
@@ -40,35 +40,35 @@ Try example `a)` in [jsFiddle](http://jsfiddle.net/agershun/30to2rh8/1/).
 Please make sure [[promise]] is supported if you are in the browser. 
 
 ### AlaSQL Q&A
-* [Data manipulation](Data manipulation) - array filtering, grouping, ordering
+* [Data manipulation](Data-manipulation) - array filtering, grouping, ordering
 * [Data import and export](Import-export) - [TXT](Txt), [CSV](Csv), [TSV/TAB](Tsv)/, [XLS](Xls), 
 [XLSX](Xlsx), [HTML](Html), [JSON](Json) 
 * [Search in JSON arrays and objects](JSON)
-* SQL for [JavaScript frameworks and libraries](JavaScript Frameworks):
- * Platforms: [Apache Cordova](Apache Cordova), [Ionic](Ionic), [Windows 8](Windows 8)
- * Frameworks: [Angular.js](Angular.js), 
- * Maps and diagrams: [d3.js](d3.js), [Google Maps](Google maps)
- * Charts: [Highcharts.js](Highcharts.js), [Google Charts](Google Charts) 
- * Spreadsheets: [Microsoft Excel](XLSX), [Google Docs Spreadsheets](Google Spreadsheets) 
+* SQL for [JavaScript frameworks and libraries](JavaScript-Frameworks):
+ * Platforms: [Apache Cordova](Apache-Cordova), [Ionic](Ionic), [Windows 8](Windows-8)
+ * Frameworks: [Angular.js](Angular.js) 
+ * Maps and diagrams: [d3.js](d3.js), [Google Maps](Google-maps)
+ * Charts: [Highcharts.js](Highcharts.js), [Google Charts](Google-Charts) 
+ * Spreadsheets: [Microsoft Excel](XLSX), [Google Docs Spreadsheets](Google-Spreadsheets) 
  * Grid: [Handsontable.js](Handsontable.js)
  * Formatting: [Numeral.js](Numeral.js), [Moment.js](Moment.js), [Sprintf.js](Sprintf.hs)
  * Applications: [Lotus Notes](http://blog.tcl-digitrade.com/blogs/tcl-digitrade-blog.nsf/dx/26.11.2015130651SMAG8A.htm)
-* [SQL database](Sql database) - in-memory database + [AlaSQL FileStorage](FileStorage) persistence engine
-* [SQL queries](SQL queries)
-* [External databases](External databases) - [IndexedDB](IndexedDB), [Local Storage](LocalStorage), and [SQLite](SQLite) integration
+* [SQL database](Sql-database) - in-memory database + [AlaSQL FileStorage](FileStorage) persistence engine
+* [SQL queries](SQL-queries)
+* [External databases](External-databases) - [IndexedDB](IndexedDB), [Local Storage](LocalStorage), and [SQLite](SQLite) integration
 
 ### AlaSQL Documentation
 * [[Install]]
-* [Getting started](Getting started)
+* [Getting started](Getting-started)
 * [Supported SQL statements](Sql)
 * [Functions](Functions)
 * [JavaScript API](Api)
 * [Webworker version](Webworker)
-* [LINQ fluent interface](Fluent Interface)
-* [Import and export functions](Import export)
-* [Options](AlaSQL Options)
+* [LINQ fluent interface](Fluent-Interface)
+* [Import and export functions](Import-export)
+* [Options](AlaSQL-Options)
 * [Errors processing](Errors)
-* [Internal structure](Internal Structure)
+* [Internal structure](Internal-Structure)
 * [Performance](Performance)
 * [TypeScript](TypeScript)
 * [SQL-99 compatibility](SQL-99), [SQL-99 keywords](SQL-keywords), [AlaSQL keywords](AlaSQL-Keywords)
@@ -85,10 +85,10 @@ Please make sure [[promise]] is supported if you are in the browser.
 * [alaserver](Alaserver) - simple SQL server based on AlaSQL
 
 ### Development 
-* [How to assemble AlaSQL?](How to assemble AlaSQL)
-* [How to prepare new release?](How to release)
+* [How to assemble AlaSQL?](How-to-assemble-AlaSQL)
+* [How to prepare new release?](How-to-release)
 
 ### Sandbox
-* [AlaSQL Console](http://alasql.org/console/alaconsole.html)
+* [AlaSQL Console](http://alasql.org/console/)
 
 Unsure if AlaSQL fit your needs? Chekout the [other JavaScript SQL databases](Similar-Projects)

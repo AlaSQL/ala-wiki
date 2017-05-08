@@ -6,4 +6,4 @@
 
 * [Install AlaSQL](install)
 
-* [Get started with AlaSQL](getting started)
+* [Get started with AlaSQL](Getting-started)
