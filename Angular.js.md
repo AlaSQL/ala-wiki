@@ -65,3 +65,28 @@ Play with this example: http://jsfiddle.net/vxjgnmxa/ (only chrome)
 For firefox support, please check out https://github.com/agershun/alasql/tree/develop/examples/angular/import-export-excel
 
 For Angular cli: have a look at https://github.com/agershun/alasql/issues/738#issuecomment-277266095
+
+### NG2
+
+Steps for a working AlaSQL configuration inside an NG2 project are:
+1. **npm install alasql --save**
+2. optional for XLSX export: **npm install xlsx --save** 
+3. add the javascript dependencies inside the **.angular-cli.json** file of your project
+```
+"scripts": [
+    "../node_modules/alasql/dist/alasql.min.js",
+    "../node_modules/xlsx/dist/xlsx.core.min.js"
+],
+```
+4. next import into one of your components where you woudl like to use the alasql function (not inside app-module.ts) the AlaSQL dependency. 
+`import * as alaSQLSpace from 'alasql';` 
+5. and if you would like to test your code, you can add this test block from [jsfiddle:](http://jsfiddle.net/gd7jex9s/) into your component.
+```
+public testAlaSQLExcelExport(): void {
+   var data1 = [{ a: 1, b: 10 }, { a: 2, b: 20 }];
+   var data2 = [{ a: 100, b: 10 }, { a: 200, b: 20 }];
+   var opts = [{ sheetid: 'Good', header: true }, { sheetid: 'Two', header: false }];
+   var res = alasql('SELECT INTO XLSX("MyAwesomeData.xlsx",?) FROM ?', [opts, [data1, data2]]);
+}
+```
+6. now if you run **ng serve** the project will compile without any errors or warnings and if the **testAlaSQLExcelExport()** function is used you can see that the excel file will be exported inside your browser.
