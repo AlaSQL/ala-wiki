@@ -1,6 +1,6 @@
 Try AlaSQL in Fiddle: 
 
-* Simple examples: [sample 1](http://jsfiddle.net/38hj2uwy/10/), [sample 2](http://jsfiddle.net/38hj2uwy/6/), [sample 3](http://jsfiddle.net/6a06dqhc/3/), [sample 4](http://jsfiddle.net/606ksx2g/1/), [sample 5](http://jsfiddle.net/agershun/38hj2uwy/40/)
+* Simple examples: [sample 1](http://jsfiddle.net/tp3v4h86/), [sample 2](http://jsfiddle.net/6hvL1ucz/), [sample 3](http://jsfiddle.net/6a06dqhc/3/), [sample 4](http://jsfiddle.net/606ksx2g/1/), [sample 5](http://jsfiddle.net/agershun/38hj2uwy/40/)
 * [IndexedDB example](http://jsfiddle.net/agershun/1t2rrr78/)
 * [AlaSQL Sandbox](http://jsfiddle.net/czqfyhat/2/) - [source](examples/sandbox.html)
 * [Sieve of Eratosthenes](http://jsfiddle.net/agershun/1u05op11/) - [source](examples/prime.html)
