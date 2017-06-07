@@ -21,3 +21,5 @@ alasql('SELECT * INTO XLSXML("restest280b.xls",?) FROM ?',[opts,data]);
 Test this example in https://jsfiddle.net/vL4tsaef/1/
 
 Here you can define style for any column, row, or cell in the sheet.
+
+To write special character (like `& , _ \`) to the sheet name (sheetid) you need to escape in xml format. Example: http://jsfiddle.net/ry8fq0dL/125/
