@@ -103,7 +103,7 @@ var res = alasql("SELECT * FROM example1 ORDER BY b DESC");
 console.log(res); // [{a:2,b:6},{a:1,b:5},{a:3,b:4}]
 ```
 
-jsFiddle with [example A)](http://jsfiddle.net/hguw3LLk/) and [example B)](http://jsfiddle.net/c1hbytf1/)
+jsFiddle with [example A)](http://jsfiddle.net/8xv19acv/) and [example B)](http://jsfiddle.net/sjnnraj4/)
 
 __If you are familiar with SQL it should come as no surprise that proper usage of indexes on your tables is essential to get good performance.__
 
