@@ -103,7 +103,7 @@ var res = alasql("SELECT * FROM example1 ORDER BY b DESC");
 console.log(res); // [{a:2,b:6},{a:1,b:5},{a:3,b:4}]
 ```
 
-jsFiddle with [example A)](http://jsfiddle.net/8xv19acv/) and [example B)](http://jsfiddle.net/sjnnraj4/)
+jsFiddle with [example A)](http://jsfiddle.net/hguw3LLk/) and [example B)](http://jsfiddle.net/c1hbytf1/)
 
 __If you are familiar with SQL it should come as no surprise that proper usage of indexes on your tables is essential to get good performance.__
 
@@ -181,7 +181,7 @@ The results are good. Check out AlaSQL vs. other JavaScript SQL databases:
 
 * **2x speed** [compared to Linq](http://jsperf.com/alasql-vs-linq-on-groupby/3) for `GROUP BY` on 1,048,576 rows
 
-Please remember to set indexes on your tables to speed up your queries. [Have a look here](https://www.tutorialspoint.com/sql/sql-indexes.htm) if you are unfamiliar with this concept.
+Please remember to set indexes on your tables to speed up your queries. [Have a look here](https://www.tutorialspoint.com/sql/sql-indexes.htm) [SQL Index(http://www.guru99.com/indexes.html) if you are unfamiliar with this concept.
 
 
 See more [speed related info on the wiki](https://github.com/agershun/alasql/wiki/Speed)
