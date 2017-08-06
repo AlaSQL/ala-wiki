@@ -181,7 +181,7 @@ The results are good. Check out AlaSQL vs. other JavaScript SQL databases:
 
 * **2x speed** [compared to Linq](http://jsperf.com/alasql-vs-linq-on-groupby/3) for `GROUP BY` on 1,048,576 rows
 
-Please remember to set indexes on your tables to speed up your queries. [Have a look here](https://www.tutorialspoint.com/sql/sql-indexes.htm) [SQL Index(http://www.guru99.com/indexes.html) if you are unfamiliar with this concept.
+Please remember to set indexes on your tables to speed up your queries. [Have a look here](https://www.tutorialspoint.com/sql/sql-indexes.htm) and [SQL Index](http://www.guru99.com/indexes.html) page if you are unfamiliar with this concept (this is a part of [SQL Tutorial](http://www.guru99.com/sql.html)).
 
 
 See more [speed related info on the wiki](https://github.com/agershun/alasql/wiki/Speed)
@@ -346,7 +346,7 @@ Pinpointing data on a map should be easy. AlaSQL is great to prepare source data
 
 ### AlaSQL ♥ Google Spreadsheets
 
-AlaSQL can query data directly from a Google spreadsheet. A good "partnership" for easy editing and powerfull data manipulation. See more about [Google Spreadsheets and AlaSQL in the wiki](https://github.com/agershun/alasql/wiki/Google-maps)
+AlaSQL can query data directly from a Google spreadsheet. A good "partnership" for easy editing and powerfull data manipulation. See more about [Google Spreadsheets and AlaSQL in the wiki](https://github.com/agershun/alasql/wiki/Google-Spreadsheets)
 
 
 
