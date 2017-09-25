@@ -26,4 +26,11 @@ If you want to upload data from desktop you can use the following code:
 ```
 See [this jsfiddle](http://jsfiddle.net/3ve90afo/) for a live example
 
+For people working with react.js: you need to use the `nativeEvent` from the event:
+```js
+    window.alasql('SELECT * FROM FILE(?,{headers:true})', [e.nativeEvent], function (data) {
+      console.log(data)
+    });
+```
+
 See also [[How to upload form for txt and xlsx in javascript]]
