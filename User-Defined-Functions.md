@@ -66,12 +66,46 @@ See more examples here:
 * [50functions.js](https://github.com/agershun/alasql/blob/develop/src/55functions.js#L230-L339)
 * [test266.js](https://github.com/agershun/alasql/blob/develop/test/test266.js)
 
-  
+## Create aggretating functions  
 From 3.8 aggretating functions can be set via a async SQL statement with the following syntaxes:
 
 ```sql
 CREATE (AGGREATE|AGGREGATOR) MyAggr AS ``function(value, accumulator, stage) { ... }``;
 ```
+
+## Custom `FROM` function
+
+You can create custom FROM function like here:
+```
+alasql.from.DB = function(dbtype, opts, cb, idx, query) {
+	var res = [];
+        async_read_data_from_mysql_function(dbtype, opts.dbname, opts.tablename, function(data) {
+		res = data;
+		if(cb){
+			res = cb(res, idx, query);
+		}
+	};
+	return null;
+};
+
+function async_read_data_from_mysql_function(dbtype, dbname, tablename, cb) {
+    // put your code here
+   cb(read_data);
+}
+```
+Then you can use it like:
+```sql
+SELECT * FROM DB("mysql",{dbname:"one", tablename:"two"})
+```
+
+Also, you can save data to MYSQL with ```alasql.into.DB()``` custom function.
+```
+alasql('SELECT * INTO DB("mysql",{dbname:"one", tablename:"two"}) FROM ?',[data]);
+```
+
+You can see the examples of FROM and INTO functions at ```src/84from.js``` and ```src/830into.js``` files.
+
+
 
 
 
