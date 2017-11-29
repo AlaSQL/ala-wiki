@@ -32,7 +32,7 @@ Please note that when interacting with files AlaSQL [will run async](async). We 
             });
 ```
 
-To store data in multiple sheets have a look at http://jsfiddle.net/gd7jex9s/
+To store data in multiple sheets have a look at http://jsfiddle.net/np3pea44/
 		
 ### Options
 
