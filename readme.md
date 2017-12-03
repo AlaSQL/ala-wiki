@@ -4,7 +4,6 @@ _Got a question? Ask on [Stack Overflow](http://stackoverflow.com/questions/ask?
 
 
 [![Build Status](https://travis-ci.org/agershun/alasql.svg?branch=develop)](https://travis-ci.org/agershun/alasql)
-[![](https://data.jsdelivr.com/v1/package/npm/alasql/badge?style=rounded)](https://www.jsdelivr.com/package/npm/alasql)
 [![NPM downloads](http://img.shields.io/npm/dm/alasql.svg?style=flat&label=npm%20downloads)](https://npm-stat.com/charts.html?package=alasql)
 [![OPEN open source software](https://img.shields.io/badge/Open--OSS-%E2%9C%94-brightgreen.svg)](http://open-oss.com)
 [![Release](https://img.shields.io/github/release/agershun/alasql.svg?label=Last%20release&a)](https://www.npmjs.com/package/alasql)
@@ -12,6 +11,7 @@ _Got a question? Ask on [Stack Overflow](http://stackoverflow.com/questions/ask?
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/agershun/alasql.svg)](http://isitmaintained.com/project/agershun/alasql "Average time to resolve an issue")
 [![Coverage]( https://img.shields.io/codecov/c/github/agershun/alasql/develop.svg)](https://rawgit.com/agershun/alasql/develop/test/coverage/lcov-report/dist/alasql.fs.js.html)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/328/badge)](https://bestpractices.coreinfrastructure.org/projects/328)
+[![](https://data.jsdelivr.com/v1/package/npm/alasql/badge?style=rounded)](https://www.jsdelivr.com/package/npm/alasql)
 
 
 
