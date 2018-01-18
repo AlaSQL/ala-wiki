@@ -119,11 +119,11 @@ import alasql from 'alasql';   # meteor
 npm install -g alasql          # command line
 ```
 
-For the browser: include [alasql.min.js](https://unpkg.com/alasql)  
+For the browser: include [alasql.min.js](https://cdn.jsdelivr.net/npm/alasql)  
 
 
 ```html
-<script src="//unpkg.com/alasql@0.4"></script>
+<script src="https://cdn.jsdelivr.net/npm/alasql@0.4"></script>
 ```
 
 
