@@ -127,4 +127,8 @@ Problem with dates when you read your file? Have a look at [this comment](https:
 
 ----
 
+Uploading files directly into AlaSQL? Have a look at https://github.com/agershun/alasql/issues/971#issuecomment-360121191
+
+----
+
 If you need Excel 2003 files please check out: [[XLS]]
