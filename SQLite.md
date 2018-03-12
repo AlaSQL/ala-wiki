@@ -8,7 +8,7 @@ AlaSQL can read from SQLite files if the [SQL.js](https://github.com/kripken/sql
     <script>
         alasql(['ATTACH SQLITE DATABASE Chinook("Chinook_Sqlite.sqlite");\
             USE Chinook; \
-            SELECT * FROM Genre'].then(function(res){
+            SELECT * FROM Genre']).then(function(res){
                 console.log("Genres:",res.pop());
         });
     </script>
