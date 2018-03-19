@@ -17,5 +17,5 @@ AlaSQL provides three different methods to insert data from array into table:
 
 If you download data from external file, you can use this syntax:
 ```js
-    alaslq('CREATE one; SELECT * INTO one FROM JSON("data.json")');
+    alaslq('CREATE table one; SELECT * INTO one FROM JSON("data.json")');
 ```
