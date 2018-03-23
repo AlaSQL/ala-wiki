@@ -456,7 +456,7 @@ If using AlaSQL as Web Worker, you can import it traditionally as a script:
 
 
 
-### Webpack, Browserify and React (Native)
+### Webpack, Browserify, Vue and React (Native)
 
 To use AlaSQL within a `create-react-app` (CRA) setup **without** ejecting it is: Please [have a look at this comment](https://github.com/agershun/alasql/issues/930#issuecomment-322413745).
 
@@ -539,6 +539,16 @@ var browserify = require("browserify");
 var b = browserify("./main.js").bundle();
 //Will ignore the modules fs, path, xlsx
 ["fs","path","xlsx",  ... ].map(ignore => b.ignore(ignore));
+```
+
+#### Vue
+
+For some frameworks (lige Vue) alasql cant access XLSX by it self. We recommend handeling it by including AlaSQL the following way: 
+
+```import alasql from 'alasql';
+import XLSX from 'xlsx';
+alasql.utils.isBrowserify = false;
+alasql.utils.global.XLSX = XLSX;
 ```
 
 #### jQuery
