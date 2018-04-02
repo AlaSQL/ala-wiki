@@ -386,7 +386,7 @@ Please be aware that AlaSQL has [bugs](https://github.com/agershun/alasql/labels
 0. At the moment AlaSQL does not work with JSZip 3.0.0 - please use version 2.x.
 
 
-0. `JOIN`ing a sub-`SELECT` does not work. Please use a `with` structure ([Example here](https://github.com/agershun/alasql/issues/832#issuecomment-377574550)), store your sub-`SELECT` in a temporary table to do a join or fetch the sub-`SELECT` and pass it as an argument ([Example here](https://github.com/agershun/alasql/issues/832#issuecomment-377559478)).
+0. `JOIN`ing a sub-`SELECT` does not work. Please use a `with` structure ([Example here](https://github.com/agershun/alasql/issues/832#issuecomment-377574550)) or fetch the sub-`SELECT` to a variable and pass it as an argument ([Example here](https://github.com/agershun/alasql/issues/832#issuecomment-377559478)).
 
 0. AlaSQL uses the [FileSaver.js](https://github.com/eligrey/FileSaver.js/) library for saving files locally from the browser. Please be aware that it does not save files in Safari 8.0.
 
