@@ -26,7 +26,7 @@ AlaSQL - _( [à la](http://en.wiktionary.org/wiki/%C3%A0_la) [SQL](http://en.wik
 This library is designed for:
 
 * Fast in-memory SQL data processing for BI and ERP applications on fat clients
-* Easy ETL and options for persistency by data import / manipulation / export of several formats
+* Easy ETL and options for persistencey by data import / manipulation / export of several formats
 * All major browsers, Node.js, and mobile applications
 
 
@@ -104,9 +104,9 @@ var res = alasql("SELECT * FROM example1 ORDER BY b DESC");
 console.log(res); // [{a:2,b:6},{a:1,b:5},{a:3,b:4}]
 ```
 
-jsFiddle with [example A)](http://jsfiddle.net/hguw3LLk/) and [example B)](http://jsfiddle.net/c1hbytf1/)
+jsFiddle with [example A)](http://jsfiddle.net/2aorhk1d/) and [example B)](http://jsfiddle.net/ztfhdrsv/)
 
-__If you are familiar with SQL it should come as no surprise that proper usage of indexes on your tables is essential to get good performance.__
+__If you are familiar with SQL it should come as no surprise that proper use of indexes on your tables is essential to get good performance.__
 
 
 
@@ -378,11 +378,11 @@ Please be aware that AlaSQL has [bugs](https://github.com/agershun/alasql/labels
 
 0. It is OK to `SELECT` 1000000 records or to `JOIN` two tables with 10000 records in each (You can use streaming functions to work with longer datasources - see [test/test143.js](test/test143.js)) but be aware that the workload is multiplied so `SELECT`ing from more than 8 tables with just 100 rows in each will show bad performance. This is one of our top priorities to make better.
 
-0. Limited functionality for transactions (supports only for localStorage) - Sorry, transactions are limited, because AlaSQL switched to more complex approach for handling `PRIMARY KEY`s / `FOREIGN KEY`s. Transactions will be fully turned on again in future version.
+0. Limited functionality for transactions (supports only for localStorage) - Sorry, transactions are limited, because AlaSQL switched to more complex approach for handling `PRIMARY KEY`s / `FOREIGN KEY`s. Transactions will be fully turned on again in a future version.
 
 0. A `(FULL) OUTER JOIN` and `RIGHT JOIN` of more than 2 tables will not produce expected results. `INNER JOIN` and `LEFT JOIN` are OK.
 
-0. Please use aliases when you want fields with same name from different tables (`SELECT a.id as a_id, b.id as b_id FROM ?`).
+0. Please use aliases when you want fields with the same name from different tables (`SELECT a.id as a_id, b.id as b_id FROM ?`).
 
 0. At the moment AlaSQL does not work with JSZip 3.0.0 - please use version 2.x.
 
