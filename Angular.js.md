@@ -8,9 +8,9 @@ You can use AlaSQL together with Angular.js framework. Please include the file n
         alasql('SELECT * INTO XLSX("john.xlsx",{headers:true}) FROM ?',[$scope.items]);
     };
 ```
-See [simple example in jsFiddle](http://jsfiddle.net/agershun/00nfeq12/).
+See [a simple example in jsFiddle](http://jsfiddle.net/e69ojjs8/).
 
-Another example: [Calculating average of array](http://jsfiddle.net/agershun/she06Lq3/2/)
+Another example: [Calculating average of array](http://jsfiddle.net/1thLzj4a/)
 
 
 ## In more detail
