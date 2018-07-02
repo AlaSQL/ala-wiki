@@ -98,10 +98,10 @@ Here:
 * `SEARCH` - search keyword
 * `/` - walk over all members of array
 * `AS @team` - save result into temporary variable `team`
-*` members` - take member property of previous result
+* ` members` - take member property of previous result
 * `/` - walk over all members of members array
 * `AS @member` - save result into temporary variable `member`
-*` categories` - take category property of previous result
+* ` categories` - take category property of previous result
 * `/`- walk over categories array
 * `RETURN(...)` - pseudo-function to create result record
 * `RETURN(@team->teamname AS team,...)` - take temporary variable 'team', take its teamname property and store it as team property of result object
