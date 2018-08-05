@@ -124,7 +124,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 #### # [Create a new github release](https://github.com/agershun/alasql/releases/new) Same description as CHANGELOG.md and with release title as `"CITYNAME" (TODAY)` for example `"Athens" (13.07.2015)` You should be able to find it in the dropdown in "Tag version" - and select **master** as branch.
 releaseUrl="https://github.com/agershun/alasql/releases/new"
 
-    run "Create a new github release.${CR}${CR}Same title and description as in CHANGELOG.md but without title version number${CR}${CR}You should be able to find $thisVersion in the dropdown \"Tag version\"${CR}${CR}Please select MASTER as branch(!)${CR}" '{ open CHANGELOG.md || vim CHANGELOG.md ; } && { open $releaseUrl 2>/dev/null || echo "No browser found to open: $releaseUrl" && hitkey ; }'
+    run "Create a new github release.${CR}${CR}Same title and description as in CHANGELOG.md but without title version number${CR}${CR}You should be able to find $thisVersion in the dropdown \"Tag version\"${CR}${CR}Please select MASTER as branch(!)${CR}" '{ open CHANGELOG.md || vim CHANGELOG.md ; } & { open $releaseUrl 2>/dev/null || echo "No browser found to open: $releaseUrl" && hitkey ; }'
 
 
 ###### You are done !
