@@ -3,7 +3,7 @@
 This is a list of cases how AlaSQL can manipulate JavaScript data (JSON).
 
 Counting:
-* [How to add own keys for grouped output?](How to add own keys for grouped output)
+* [How to add own keys for grouped output?](How-to-add-own-keys-for-grouped-output)
 * [How to aggregate an array of objects based on object property?](How to aggregate an array of objects based on object property)
 * [How to create a cleaned up contact object of an array of contact data?](How to create a cleaned up contact object of an array of contact data)
 * [How to count matching values in array?](How to count matching values in array)
