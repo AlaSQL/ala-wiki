@@ -41,7 +41,7 @@ XLSX() function supports the following options:
 #### sheetid
 Sheet name:
 ```js
-    alasql.promise('select * from xlsx("cities.xlsx",{sheetid:"Sheet2"}')
+    alasql.promise('select * from xlsx("cities.xlsx",{sheetid:"Sheet2"})')
             .then(function(data){
                  console.log(data);
             }).catch(function(err){
@@ -53,7 +53,7 @@ By default AlaSQL read data from sheet "Sheet1".
 #### Range
 Cells range:
 ```js
-    alasql.promise('select * from xlsx("cities.xlsx",{range:"A1:D100"}')
+    alasql.promise('select * from xlsx("cities.xlsx",{range:"A1:D100"})')
             .then(function(data){
                  console.log(data);
             }).catch(function(err){
@@ -65,7 +65,7 @@ By default AlaSQL read all data in the sheet.
 #### headers
 Read headers from data range (true/false):
 ```js
-    alasql.promise('select * from xlsx("cities.xlsx",{headers:true}')
+    alasql.promise('select * from xlsx("cities.xlsx",{headers:true})')
             .then(function(data){
                  console.log(data);
             }).catch(function(err){
