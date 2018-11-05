@@ -1,7 +1,14 @@
 # Angular.js + AlaSQL
 
 
-You can use AlaSQL together with Angular.js framework. Please include the file normally and not via requireJS. Please include alasql before requireJS to avoid issue of "Mismatched anonymous define() module". This issue is with requireJS.
+You can use AlaSQL together with Angular.js framework by including it together with XLSX.js
+
+```
+import * as alasql from 'alasql';
+import * as XLSX from 'xlsx';
+alasql['utils'].isBrowserify = false;
+alasql['utils'].global.XLSX = XLSX;
+```
 
 ```js
     $scope.exportData = function () {
