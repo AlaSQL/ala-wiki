@@ -25,19 +25,19 @@ go(){
 
     
 #### # Install node modules
-    run "Install node modules" "npm install"
+    run "Install node modules" "yarn install"
 
     
 #### # Check for node modules to be updated
-    run "Make sure all node modules are up to dated" "npm run uptodate"
+    run "Make sure all node modules are up to date" "yarn uptodate"
 
 
 
 
 
-#### # Verify that `npm test` does not give any errors
+#### # Verify that `yarn test` does not give any errors
     echo "For the checklist to continue build+test must be OK" && hitkey
-    npm test || exit 1
+    yarn test || exit 1
     hitkey && br
 
 
@@ -101,8 +101,8 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 
 #### # Verify that `npm test` does not give any errors
     echo "For the checklist to continue build+test must be OK and a test cover report will be created" && hitkey
-    npm run test || exit 1
-    npm run test:cover 
+    yarn test || exit 1
+    yarn test-cover 
     hitkey
     br
 
@@ -121,7 +121,7 @@ roadmapUrl="https://trello.com/b/qxz65pVi/alasql-roadmap"
 #### # Push develop, master and tags to github 
     run "Push develop and master + tags to github" "git checkout master && git push && git checkout develop && git push && git push --tags"
 
-#### # [Create a new github release](https://github.com/agershun/alasql/releases/new) Same description as CHANGELOG.md and with release title as `"CITYNAME" (TODAY)` for example `"Athens" (13.07.2015)` You should be able to find it in the dropdown in "Tag version" - and select **master** as branch.
+#### # [Create a new github release](https://github.com/agershun/alasql/releases/new) Same description as CHANGELOG.md and with release title as `"CITYNAME" (TODAY)` for example `"Athens" (19.01.2038)` You should be able to find it in the dropdown in "Tag version" - and select **master** as branch.
 releaseUrl="https://github.com/agershun/alasql/releases/new"
 
     run "Create a new github release.${CR}${CR}Same title and description as in CHANGELOG.md but without title version number${CR}${CR}You should be able to find $thisVersion in the dropdown \"Tag version\"${CR}${CR}Please select MASTER as branch(!)${CR}" '{ open CHANGELOG.md || vim CHANGELOG.md ; } & { open $releaseUrl 2>/dev/null || echo "No browser found to open: $releaseUrl" && hitkey ; }'
@@ -138,7 +138,10 @@ releaseUrl="https://github.com/agershun/alasql/releases/new"
 	info "Checking all is OK to start the checklist..." && echo 
 
 #### # Check npm is installed
-	npm version > /dev/null 2>&1 || flee "Please install npm before continuing"  
+	node -v > /dev/null 2>&1 || flee "Please install npm before continuing"  
+
+#### # Check npm is installed
+	yarn -v > /dev/null 2>&1 || flee "Please install npm before continuing"  
 
 #### # Check we are in same folder as package.json
       [ -f ./package.json ] || flee "Please cd to package root folder" 
