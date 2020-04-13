@@ -15,7 +15,7 @@ AlaSQL can query data directly from a google spreadsheet - so its easy to edit t
 </script>
 ```
 
-Play with this example [in jsFiddle](http://jsfiddle.net/tov0zcmd/)
+Play with this example [in jsFiddle](http://jsfiddle.net/xrgwh5v9/)
 
 Remember to publish your spreadsheet. In case of problem read this [StackoOverflow question](http://stackoverflow.com/questions/28059346/get-json-feed-from-published-google-sheet). 
 
