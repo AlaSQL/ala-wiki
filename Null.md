@@ -22,7 +22,8 @@ CREATE TABLE dbo.Parts (
 );
 ```
 
-----
+### Sorting NULL 
+
 
 You can use `NULLS LAST` and `NULLS FIRST` in your sort order to determine the sorting
 
