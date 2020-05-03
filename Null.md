@@ -22,4 +22,10 @@ CREATE TABLE dbo.Parts (
 );
 ```
 
+----
+
+You can use `NULLS LAST` and `NULLS FIRST` in your sort order to determine the sorting
+
+    SELECT a, b FROM ? ORDER BY a ASC NULLS FIRST, b ASC NULLS LAST
+
 See also: [ISNULL](Isnull), [NOT NULL](Not Null)
