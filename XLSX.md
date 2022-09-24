@@ -112,7 +112,7 @@ You can provide parameters to how js-xlsx should read the files in the config ob
 
 ----
 
-Since version 2 AlaSQL defaults to load excel dates as JS date objects. To change the default to behaviour set `alasql.options.excel = {cellDates: false};`. To change a single request you can provide `{cellDates: false}` as the secondary parameter to the `xlsx()` function. 
+Since version 2 AlaSQL defaults to load excel dates as JS date objects. To change the default behaviour set `alasql.options.excel = {cellDates: false};`. To change a single request you can provide `{cellDates: false}` as the secondary parameter to the `xlsx()` function. 
 
 
 ----
