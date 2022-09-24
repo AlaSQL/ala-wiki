@@ -1,0 +1,1 @@
+TIMESTAMPDIFF from mysql is supported from version 2.0.0
