@@ -1,0 +1,1 @@
+Set `global.document = document` in Node via the likes of JSDom to query HTML one has parsed in Node (on the server side)
