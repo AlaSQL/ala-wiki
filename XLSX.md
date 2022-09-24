@@ -125,9 +125,12 @@ To read blank column values from xls,xlsx and csv you can use this notation for 
 
 Problem with dates when you read your file? Have a look at [this comment](https://github.com/agershun/alasql/issues/395#issuecomment-290392777)
 
+Or use the XLSXopts celldates to convert Excel dates to JS date objects: ´SELECT * FROM xlsx("test/test815.xlsx", {XLSXopts: {cellDates: true}})
+
 ----
 
 Uploading files directly into AlaSQL? Have a look at https://github.com/agershun/alasql/issues/971#issuecomment-360121191
+
 
 ----
 
