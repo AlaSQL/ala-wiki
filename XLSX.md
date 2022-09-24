@@ -107,6 +107,12 @@ AlaSQL uses js-xlsx library to read and export Excel files.
 
 js-xlsx at Github: https://github.com/SheetJS/js-xlsx
 
+You can provide parameters to how js-xlsx should read the files in the config object in the second parameter of the xlsx() function. 
+
+
+----
+
+Since version 2 AlaSQL defaults to load excel dates as JS date objects. To change the default to behaviour set `alasql.options.excel = {cellDates: false};`. To change a single request you can provide `{cellDates: false}` as the secondary parameter to the `xlsx()` function. 
 
 
 ----
@@ -120,12 +126,6 @@ By default AlaSQL look through first 10 records to collect infomation about all 
 To read blank column values from xls,xlsx and csv you can use this notation for column names [0],[1],[2] like:
 
     SELECT [0],[2] FROM XLS('filename.xls') WHERE [3] > 100
-
-----
-
-Problem with dates when you read your file? Have a look at [this comment](https://github.com/agershun/alasql/issues/395#issuecomment-290392777)
-
-Or use the XLSXopts celldates to convert Excel dates to JS date objects: ´SELECT * FROM xlsx("test/test815.xlsx", {XLSXopts: {cellDates: true}})
 
 ----
 
