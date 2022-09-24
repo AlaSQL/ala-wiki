@@ -7,10 +7,10 @@ Syntax:
 
 Example A
 ```js
-    alasql.fn.check = function(r) {
+    alasql.fn.verify = function(r) {
          if(r.n == 42) return false; // Do not insert on this number 
     };
-    alasql('CREATE TRIGGER mytrigger BEFORE INSERT ON mytable check');
+    alasql('CREATE TRIGGER mytrigger BEFORE INSERT ON mytable verify');
 ```
 
 Example B
