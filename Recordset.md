@@ -1,6 +1,6 @@
 # Keyword `RECORDSET`
 
-Syntax:
+Suggested Syntax:
 ```sql
     RECORDSET OF SELECT ...
 ```
@@ -21,7 +21,7 @@ AlaSQL modifier for SELECT queries.
     SELECT a, b FROM @data;
     -- returns array of objects [{a:1,b:10},{a:2,b:20}]
 
-    SELECT RECORDSET a, b FROM @data;
+    RECORDSET OF SELECT a, b FROM @data;
     -- returns array of objects 
     -- {data:[{a:1,b:10},{a:2,b:20}] , columns:[{columnid:'a'},{columnid:'b'}]}
 ```
