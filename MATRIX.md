@@ -1,9 +1,9 @@
 # Keyword `MATRIX`
 
-result modifier for a `SELECT` 
+Result modifier for a `SELECT` 
 
 
-Syntax:
+Suggested syntax:
 ```sql
     MATRIX OF SELECT ...
 ```
@@ -14,10 +14,10 @@ Alternative syntax:
 ```
 
 
-Usually AlaSQL returns array of records (JavaScript objects), but you can modify SELECT statement to return a matrix (array of arrays) of values from the recordset. Row order is as requested in the select.
+Return data as an array of arrays (one array per row) instead of the default array of javascript objects. Row order is as requested in the select.
 
 
-You can set query modifier for all SELECTs:
+You can set query modifier for all SELECTs via:
 ```js
     alasql.options.modifier = 'MATRIX';
 ```
