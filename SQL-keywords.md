@@ -4,7 +4,7 @@ See list of [[Supported SQL statements]]
 
 See also the full list of [AlaSQL reserved keywords](AlaSQL keywords).
 
-The list of keywords used in AlaSQL (based on the table from [here](http://developer.mimer.com/standard/reservedwords/sql-reserved-words.tml)).
+The list of keywords used in AlaSQL (based on the table from [here](https://web.archive.org/web/20170427161717/http://developer.mimer.com/standard/reservedwords/sql-reserved-words.tml)).
 
 Keyword | SQL-92 | SQL-99 | SQL-2003 | SQL-2008 | SQL-2011 | AlaSQL
 --- | --- | --- | --- | --- | --- | ----
