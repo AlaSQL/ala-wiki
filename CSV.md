@@ -63,8 +63,9 @@ For CSV you can set the following options
 - **utf8Bom** default depends on header. If headers will be included it will be default `true`. If headers not included it will be default `false`. If `true` BOM will be added to the CSV file (useful in some cases with excel)
 - **separator** is default `;` and can be set to any string used as a seperator
 - **quote** is default `"` and can be set to any string used to quote strings
+- **raw** is default `false` and can be set to true if you want all data returned as the raw string (so no conversion of numbers)
 
-Please note that default seperator is `;` and not `,` as specified by the [RFC](https://www.ietf.org/rfc/rfc4180.txt). The reason is that [Excel cant always handle ','](https://kb.paessler.com/en/topic/2293-i-have-trouble-opening-csv-files-with-microsoft-excel-is-there-a-quick-way-to-fix-this#reply-5193). As Excel usageis such a big usercase for the library we rather bother people who can't handel the incorrect `.csv` file with adding the parameter {seperator:','} than getting questions from all the people who cant make the lib "work" with Excel. 
+Please note that default seperator is `;` and not `,` as specified by the [RFC](https://www.ietf.org/rfc/rfc4180.txt). The reason is that [Excel cant always handle ','](https://kb.paessler.com/en/topic/2293-i-have-trouble-opening-csv-files-with-microsoft-excel-is-there-a-quick-way-to-fix-this#reply-5193). As Excel usage is such a big use case for the library we rather bother people who can't handle the incorrect `.csv` file with adding the parameter {seperator:','} than getting questions from all the people who cant make the lib "work" with Excel. 
 
 See also: [TAB](Tab), [TSV](Tsv), [XLSX](Xlsx), [JSON](Json)
 
