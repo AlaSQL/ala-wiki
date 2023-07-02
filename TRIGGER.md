@@ -28,4 +28,5 @@ Limitations:
 * No `INSTEAD OF DELETE` 
 * `BEFORE/AFTER DELETE` can not prevent record from deletion 
 * Triggers do not works for `DELETE FROM` mytable without `WHEN` clause
+* Some issues have been reported on indexedDB. Please report any new issues. 
 
