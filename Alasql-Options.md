@@ -86,6 +86,10 @@ excel: {cellDates: true},
 /** Option for SELECT * FROM a,b */
 joinstar: 'overwrite',
 
+/* When false, both NOW and GETDATE will return a Date object instead of a string formatted Date */
+dateAsString: true
+
+
 ```
 
 
