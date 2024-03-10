@@ -1,6 +1,6 @@
 # `Promise` notation
 
-We strongly recommend using the promise notation for all [[async]] interaction with AlaSQL. This includes everytime a filename or URL is part of the SQL.
+We strongly recommend using the promise notation for all [[async]] interactions with AlaSQL. This includes every time a filename or URL is part of the SQL.
 
 ```js
 alasql.promise(sql(s) [, params])
@@ -31,7 +31,7 @@ AlaSQL uses ES6 promises which are available in most modern browsers. AlaSQL bri
 
 ## Chain of promises
 
-If you put more than one SQL commands in the same string they will (until its fixed) run sync within in the async call to `alasql` - so a command like `"INSERT ...; SELECT * ..."` might not give the expected result as the select might run before the insert is done. 
+If you put more than one SQL command in the same string they will (until it is fixed) run sync within the async call to `alasql` - so a command like `"INSERT ...; SELECT * ..."` the second command might start before the first command is done. This is not a problem unless you are using a DB that demands async interaction (like indexedDB).
 
 Pass an array of queries to `alasql.promise` to execute in a chain (so one after the return of the promise of the other). 
 
@@ -55,11 +55,11 @@ Please note that to be able to combine a query with parameters instead of a stri
 
 ## More about promise
 
-If you are not used to work with promises have a look at http://www.2ality.com/2014/10/es6-promises-api.html where the concepts are explained very well. Central to the usage is the consept of 
+If you are not used to work with promises have a look at http://www.2ality.com/2014/10/es6-promises-api.html where the concepts are explained very well. Central to the usage is the concept of 
 
 ![image](http://3.bp.blogspot.com/-K9wwF9rRnJA/VDEiVbdCqDI/AAAAAAAAA4g/QkdNWpxIzEc/s1600/resolve_with_thenable.jpg)
 
-Stating that if you can chain `.then(...)`'s if they return another promise. For AlaSQL this means you can return a `alasql.promise` object from a `.then` and keep the code unnested. 
+This means you can chain .then(...) methods when they return another promise. For AlaSQL this means you can return a `alasql.promise` object from a `.then` and keep the code unnested. 
 
 Example of the notation:
 ```js
