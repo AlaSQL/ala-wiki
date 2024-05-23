@@ -45,7 +45,7 @@ From SELECT statement
 * [[XLSX]] 
 * [[XLS]]
 * [[HTML]]
-* [[JSONL]] / [JSONS] / [NDJSON]
+* [[JSONL]] / [[JSONS]] / [[NDJSON]]
 
 ## From parameters (? and [?])
 
