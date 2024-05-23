@@ -37,14 +37,15 @@ From SELECT statement
 ```
 
 ## From functions
-* [[TXT]]()
-* [[JSON]]()
-* [[CSV]]()
-* [[TSV]]()
-* [[TAB]]()
-* [[XLSX]]() 
-* [[XLS]]()
-* [[HTML]]()
+* [[TXT]]
+* [[JSON]]
+* [[CSV]]
+* [[TSV]]
+* [[TAB]]
+* [[XLSX]] 
+* [[XLS]]
+* [[HTML]]
+* [[JSONL]] / [JSONS] / [NDJSON]
 
 ## From parameters (? and [?])
 
