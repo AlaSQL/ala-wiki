@@ -1,6 +1,5 @@
-© 2014-2023, [Andrey Gershun](mailto:agershun@gmail.com) & [Mathias Rangel Wulff](mailto:m@rawu.dk)
+© 2014-2024, [Andrey Gershun](mailto:agershun@gmail.com) & [Mathias Rangel Wulff](mailto:m@rawu.dk)
 
-**Please let us know if something could be described better by [submitting an issue](https://github.com/agershun/alasql/issues/new)**
-
+**Please help improve the documentation by opening a PR on the [wiki repo](https://github.com/AlaSQL/ala-wiki)**
 
 
