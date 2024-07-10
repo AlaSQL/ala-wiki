@@ -66,7 +66,7 @@ Example: `SELECT DATEDIFF(day, DATE("1995-12-17T03:24:00"), NOW())`
 
 Adds a given number of <unit> to the given date.
 
-Example: `SELECT DATEADD(day, -2, NOW())` would subtract 5 days from today (including time).
+Example: `SELECT DATEADD(day, -2, NOW())` would subtract 2 days from today (including time).
 
 ### DATE_ADD(unit, valueInMs) / ADDDATE(unit, valueInMs)
 Does the same as `DATEADD`, except that no unit can be passed. The value must be in milliseconds.
