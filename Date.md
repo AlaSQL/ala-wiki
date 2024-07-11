@@ -6,28 +6,28 @@ AlaSQL supports two different date types:
 
 See the example:
 ```js
-    alasql('CREATE TABLE orders (orderdate Date)');
-    alasql('INSERT INTO orders VALUES ("2014-01-01")');
-    var res = alasql('SELECT * FROM orders');
+alasql('CREATE TABLE orders (orderdate Date)');
+alasql('INSERT INTO orders VALUES ("2014-01-01")');
+var res = alasql('SELECT * FROM orders');
 
-    // It gives a JavaScript dates
-    var res = alasql('SELECT orderdate->getUTCFullYear() FROM orders');
+// It gives JavaScript dates
+var res = alasql('SELECT orderdate->getUTCFullYear() FROM orders');
 
-    // This is gives an array of years
-    // Here - getUTCFullYear() - is a function of object Date.prototype
+// This gives an array of years
+// Here - getUTCFullYear() - is a function of object Date.prototype
 ```
 
-If you want to use good old SQL date just use `DATE`, instead `Date`:
+If you want to use good old SQL date just use `DATE`, instead of `Date`:
 ```js
-    alasql('CREATE TABLE sample (sqldate DATE, jsdate Date)');
+alasql('CREATE TABLE sample (sqldate DATE, jsdate Date)');
 ```
 See a [jsFiddle example](http://jsfiddle.net/b94d5e3w/)
 
-Please note that Javascript will use locale when working with dates, so make sure always to ask for UTC time. Example: for the Date `2014-01-01` the `.getFullYear()` (missing `UTC`) will give you `2013` if you are located west of london. 
+## Please Note
 
-NOTE: When `alasql.options.dateAsString` (default: true) is set to false, JavaScript dates are  _always_ used. 
-JavaScript dates are easier to work with then string dates, especially when the time component is of relevance in the data (for example when sorting or using `BETWEEN`).
-The following date functions are affected by this configuration property: `NOW()`, `DATE()`, `GETDATE()`, `CURRENT_TIMESTAMP()`, `CURDATE()` and `CURRENTDATE()`.
+When `alasql.options.dateAsString` (default: true) is set to false, JavaScript dates are _always_ used. JavaScript dates are easier to work with than string dates, especially when the time component is of relevance in the data (for example when sorting or using `BETWEEN`). The following date functions are affected by this configuration property: `NOW()`, `DATE()`, `GETDATE()`, `CURRENT_TIMESTAMP()`, `CURDATE()` and `CURRENTDATE()`.
+
+AlaSQL runs locally and in JavaScript so when dealing with Date (JS date objects) it will use the current locale when working with dates - so make sure always to use UTC time to avoid surprises. Example: for the Date `2014-01-01`, the `.getFullYear()` (missing `UTC`) will give you `2013` if you are currently physically located west of London.
 
 ## Relevant date functions
 
@@ -39,17 +39,15 @@ Returns a JavaScript date object based on the given date string.
 Aliases for returning the current date (including time) as either a JavaScript Date object or a date string (with time component) (depending on `alasql.options.dateAsString`).
 
 ### CURDATE/CURDATE(), CURRENTDATE/CURRENTDATE()
-Aliases for returning the current date (no time component). Depending on `alasql.options.dateAsString`, either a JavaScript Date object is returned or a date string (no time component).
-In case a JavaScript date is returned, the time will be set to `00:00:00`.
+Aliases for returning the current date (no time component). Depending on `alasql.options.dateAsString`, either a JavaScript Date object is returned or a date string (no time component). In case a JavaScript date is returned, the time will be set to `00:00:00`.
 
-### SECOND(date) / MINUTE(date), / HOUR(date) / DAY(date) / MONTH(date) / YEAR(date) / DAYOFWEEK(date)
+### SECOND(date) / MINUTE(date) / HOUR(date) / DAY(date) / MONTH(date) / YEAR(date) / DAYOFWEEK(date)
 Returns the number of <unit> for the given JavaScript date object.
 
 ### DATEDIFF(period, date1, date2)
-Returns the difference between two given JS date objects, in the unit configured.
-The units can be the following (and how these are interpreted by AlaSQL):
+Returns the difference between two given JS date objects, in the unit configured. The units can be the following (and how these are interpreted by AlaSQL):
 
-* `year` - 365 days
+* `year`: 365 days
 * `quarter`: 91.25 days
 * `month`: 30 days
 * `week`: 7 days
@@ -63,7 +61,6 @@ The units can be the following (and how these are interpreted by AlaSQL):
 Example: `SELECT DATEDIFF(day, DATE("1995-12-17T03:24:00"), NOW())`
 
 ### DATEADD(unit, value, date)
-
 Adds a given number of <unit> to the given date.
 
 Example: `SELECT DATEADD(day, -2, NOW())` would subtract 2 days from today (including time).
