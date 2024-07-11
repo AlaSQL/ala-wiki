@@ -74,12 +74,3 @@ Example: `SELECT DATE_ADD(NOW(), 24 * 3600 * 1000)` would add one day to today.
 Does the same as `DATE_ADD`, but subtracts instead of adds.
 
 Example: `SELECT DATE_SUB(NOW(), 24 * 3600 * 1000)` would subtract one day from today.
-
-
----
-
-**Q1:** How do JavaScript and SQL date types differ in AlaSQL?
-
-**Q2:** What are the effects of the `alasql.options.dateAsString` setting?
-
-**Q3:** How does the `DATEDIFF` function calculate the difference between two dates in AlaSQL?
