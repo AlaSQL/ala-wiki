@@ -5,4 +5,4 @@ Syntax:
     CASE WHEN expression THEN expression ELSE expression END
 ```
 
-See also: [IIF](Iif)
+See also: [[IF]]
