@@ -7,14 +7,14 @@ Syntax:
 
 ## Join Types
 Supported join types:
-* [INNER JOIN](Inner Join)
+* [INNER JOIN](Inner-Join)
 * [LEFT [OUTER] JOIN](Left Join)
 * [RIGHT [OUTER] JOIN](Right Join)
 * [[FULL] OUTER JOIN](Outer Join)
-* [ANTI JOIN](Anti Join)
-* [SEMI JOIN](Semi Join)
-* [CROSS JOIN](Cross Join)
-* [NATURAL JOIN](Natural Join)
+* [ANTI JOIN](Anti-Join)
+* [SEMI JOIN](Semi-Join)
+* [CROSS JOIN](Cross-Join)
+* [NATURAL JOIN](Natural-Join)
 
 For example:
 ```js
@@ -61,6 +61,6 @@ With using JOIN ON in [this example](http://jsfiddle.net/agershun/Lxgfduov/):
     [data.COLORS,     data.FRUITS]);
 ```
 
-See the expected results in [Join On Join](Join On Join) page.
+See the expected results in [Join On Join](Join On-Join) page.
 
 See also: [SELECT](Select), [USING](Using), [ON](On), [APPLY](Apply)

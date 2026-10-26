@@ -35,11 +35,11 @@ Try this example in [jsFiddle](http://jsfiddle.net/j39agf7c/1/)
 ## Grouping functions
 * [CUBE()](Cube)
 * [ROLLUP()](Rollup)
-* [GROUPING SETS()](Grouping Sets)
+* [GROUPING SETS()](Grouping-Sets)
 
 ```js
     alasql('SELECT * FROM City GROUP BY ROLLUP(Continent, Country)');
 ```
 See [jsFiddle example](http://jsfiddle.net/agershun/1nccgs6n/2/) for ROLLUP(), CUBE(), and GROUPING SETS().
 
-See also: [SELECT](Select), [HAVING](Having), [CUBE](Cube), [ROLLUP](Rollup), [GROUPING SETS](Grouping Sets)
+See also: [SELECT](Select), [HAVING](Having), [CUBE](Cube), [ROLLUP](Rollup), [GROUPING SETS](Grouping-Sets)

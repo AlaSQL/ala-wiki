@@ -16,4 +16,4 @@ AlaSQL supports CREATE VIEW statement:
 ```
 Try this example [in jsFiddle](http://jsfiddle.net/0a1ovw1q/2/)
 
-See also: [DROP VIEW](Drop View)
+See also: [DROP VIEW](Drop-View)

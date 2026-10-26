@@ -29,4 +29,4 @@ You can check current database name in alasql.useid property:
     console.log('Current database:', alasql.useid);
 ```
 
-See also: [CREATE DATABASE](Create Database), [ATTACH DATABASE](Attach Database)
+See also: [CREATE DATABASE](Create-Database), [ATTACH DATABASE](Attach-Database)

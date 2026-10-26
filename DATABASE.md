@@ -11,5 +11,5 @@ Syntax:
     DETACH DATABASE alias;
 ```
 
-See also: [CREATE DATABASE](Create Database), [USE DATABASE](Use Database), [DROP DATABASE](Drop Database),
-[ATTACH DATABASE](Attach Database), [DETACH DATABASE](Detach Database)
+See also: [CREATE DATABASE](Create-Database), [USE DATABASE](Use-Database), [DROP DATABASE](Drop-Database),
+[ATTACH DATABASE](Attach-Database), [DETACH DATABASE](Detach-Database)

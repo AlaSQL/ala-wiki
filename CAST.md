@@ -11,4 +11,4 @@ To cast types to Number you can use one of three forms:
 ```
 
 
-See also: [CONVERT](Convert), [:: - double colon](Double Colon)
+See also: [CONVERT](Convert), [:: - double colon](Double-Colon)

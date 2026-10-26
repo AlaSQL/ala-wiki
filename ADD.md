@@ -5,4 +5,4 @@ Syntax:
     ALTER TABLE table ADD COLUMN column type
 ```
 
-See also: [ADD COLUMN](Add Column)
+See also: [ADD COLUMN](Add-Column)

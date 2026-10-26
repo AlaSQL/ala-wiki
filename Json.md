@@ -119,9 +119,9 @@ Please note that you can avoid letting AlaSQL try to add extension to filenames 
 
 See also
 
-* [How to search deep nested JSON?](How to search deep nested JSON)
-* [How to traverse a complex JSON doc with javascript and extract named values?](How to traverse a complex JSON doc with javascript and extract named values)
-* [How to find all parents elements in a JSON file?](How to find all parents elements in a JSON file)
-* [How to recursive find and replace in multidimensional JavaScript object?](How to recursive find and replace in multidimensional JavaScript object)
+* [How to search deep nested JSON?](How to search deep nested-JSON)
+* [How to traverse a complex JSON doc with javascript and extract named values?](How to traverse a complex JSON doc with javascript and extract named-values)
+* [How to find all parents elements in a JSON file?](How to find all parents elements in a JSON-file)
+* [How to recursive find and replace in multidimensional JavaScript object?](How to recursive find and replace in multidimensional JavaScript-object)
 
 

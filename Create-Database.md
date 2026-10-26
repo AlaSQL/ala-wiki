@@ -48,4 +48,4 @@ You can find database:
 	var mydb = alasql.databases['My Database'];
 ```
 
-See also: [DROP DATABASE](Drop Database)
+See also: [DROP DATABASE](Drop-Database)

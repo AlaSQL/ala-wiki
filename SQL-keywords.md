@@ -2,7 +2,7 @@
 
 See list of [[Supported SQL statements]]
 
-See also the full list of [AlaSQL reserved keywords](AlaSQL keywords).
+See also the full list of [AlaSQL reserved keywords](AlaSQL-keywords).
 
 The list of keywords used in AlaSQL (based on the table from [here](https://web.archive.org/web/20170427161717/http://developer.mimer.com/standard/reservedwords/sql-reserved-words.tml)).
 
@@ -123,7 +123,7 @@ DISCONNECT | √ | √ | √ | √ | √ |
 [DISTINCT](Distinct) | √ | √ | √ | √ | √ | √
 DO | √ | √ | √ | √ | √ | 
 DOMAIN | √ | √ |   |   |   |  
-[DOUBLE](Double Precision) | √ | √ | √ | √ | √ | √
+[DOUBLE](Double-Precision) | √ | √ | √ | √ | √ | √
 [DROP](Drop) | √ | √ | √ | √ | √ | √
 DYNAMIC |   | √ | √ | √ | √ |  
 EACH |   | √ | √ | √ | √ |  
@@ -152,7 +152,7 @@ FILTER |   | √ | √ | √ | √ |
 FIRST_VALUE |   |   |   |   | √ |  
 FLOAT | √ | √ | √ | √ | √ |  
 FOR | √ | √ | √ | √ | √ | 
-[FOREIGN](Foreign Key) | √ | √ | √ | √ | √ | √
+[FOREIGN](Foreign-Key) | √ | √ | √ | √ | √ | √
 FOUND | √ | √ |   |   |   |  
 FRAME_ROW |   |   |   |   | √ |  
 FREE |   | √ | √ | √ | √ |  
@@ -167,7 +167,7 @@ GLOBAL | √ | √ | √ | √ | √ | √
 GOTO | √ | √ |   |   |   |  
 GRANT | √ | √ | √ | √ | √ | 
 [GROUP](Group) | √ | √ | √ | √ | √ | √
-[GROUPING](Grouping Sets) |   | √ | √ | √ | √ | √
+[GROUPING](Grouping-Sets) |   | √ | √ | √ | √ | √
 GROUPS |   |   |   |   | √ |  
 HANDLER | √ | √ | √ | √ | √ | 
 [HAVING](Having) | √ | √ | √ | √ | √ | √
@@ -254,7 +254,7 @@ ONLY | √ | √ | √ | √ | √ |
 OPEN | √ | √ | √ | √ | √ | 
 OPTION | √ | √ |   |   |   |  
 [OR](Or) | √ | √ | √ | √ | √ | √
-[ORDER](Order By) | √ | √ | √ | √ | √ | √
+[ORDER](Order-By) | √ | √ | √ | √ | √ | √
 ORDINALITY |   | √ |   |   |   |  
 OUT | √ | √ | √ | √ | √ | √
 [OUTER](Outer) | √ | √ | √ | √ | √ |  √
@@ -280,7 +280,7 @@ PRECEDES |   |   |   |   | √ |
 PRECISION | √ | √ | √ | √ | √ | √
 PREPARE | √ | √ | √ | √ | √ | 
 PRESERVE | √ | √ |   |   |   |  
-[PRIMARY](Primary Key) | √ | √ | √ | √ | √ | √
+[PRIMARY](Primary-Key) | √ | √ | √ | √ | √ | √
 PRIOR | √ | √ |   |   |   |  
 PRIVILEGES | √ | √ |   |   |   |  
 PROCEDURE | √ | √ | √ | √ | √ | 
@@ -331,7 +331,7 @@ SENSITIVE |   | √ | √ | √ | √ |
 SESSION | √ | √ |   |   |   |  
 SESSION_USER | √ | √ | √ | √ | √ | 
 [SET](Set) | √ | √ | √ | √ | √ | √
-[SETS](Grouping Sets) |   | √ |   |   |   |  √
+[SETS](Grouping-Sets) |   | √ |   |   |   |  √
 SIGNAL |   | √ | √ | √ | √ | 
 SIMILAR |   | √ | √ | √ | √ |  
 SIZE | √ | √ |   |   |   |  
@@ -361,7 +361,7 @@ SYMMETRIC |   | √ | √ | √ | √ |
 SYSTEM |   | √ | √ | √ | √ |  
 SYSTEM_TIME |   |   |   |   | √ |  
 SYSTEM_USER | √ | √ | √ | √ | √ | 
-[TABLE](Create Table) | √ | √ | √ | √ | √ | √
+[TABLE](Create-Table) | √ | √ | √ | √ | √ | √
 TABLESAMPLE |   |   | √ | √ | √ |  
 TEMPORARY | √ | √ |   |   |   | √
 THEN | √ | √ | √ | √ | √ | √
@@ -403,7 +403,7 @@ VARBINARY |   |   |   | √ | √ |
 VARCHAR | √ | √ | √ | √ | √ | √
 VARYING | √ | √ | √ | √ | √ | 
 VERSIONING |   |   |   |   | √ |  
-[VIEW](Create View) | √ | √ |   |   |   | √ 
+[VIEW](Create-View) | √ | √ |   |   |   | √ 
 WHEN | √ | √ | √ | √ | √ | √
 WHENEVER | √ | √ | √ | √ | √ |  
 WHERE | √ | √ | √ | √ | √ | √

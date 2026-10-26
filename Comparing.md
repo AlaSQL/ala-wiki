@@ -3,7 +3,7 @@
 In AlaSQL you can use standard comparing operators:
 * = != (or <>)
 * > >= < <=
-* [BETWEEN](Between) / [NOT BETWEEN](Not Between)
+* [BETWEEN](Between) / [NOT BETWEEN](Not-Between)
 
 See the example:
 ```js

@@ -29,4 +29,4 @@ AlaSQL supports number notation for ORDER BY arguments:
     var res2 = alasql('SELECT a,b FROM ? ORDER BY 1 DESC,2 DESC',[data]);
 ```
 
-See also: [SELECT](Select), [GROUP BY](Group By)
+See also: [SELECT](Select), [GROUP BY](Group-By)

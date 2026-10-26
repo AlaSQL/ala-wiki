@@ -12,11 +12,11 @@
 2. Run-time standard library
  * [ROWNUM()](ROWNUM) (or [ROW_NUMBER()](ROWNUM))
  * [COALESCE()](Coalesce)
-3. [User-defined functions](User-defined functions)
+3. [User-defined functions](User-defined-functions)
 4. Into-functions
 5. From-functions
 6. [Aggregators](Aggregators)
-7. [User-defined aggregators](User-defined aggregators)
+7. [User-defined aggregators](User-defined-aggregators)
 
 Samples:
 ```sql

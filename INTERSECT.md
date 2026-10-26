@@ -7,4 +7,4 @@ Syntax:
     SELECT ... INTERSECT SELECT ...
 ```
 
-See also: [UNION](Union), [UNION ALL](Union All), [EXCEPT](Except), [CORRESPONDING](Corresponding)
+See also: [UNION](Union), [UNION ALL](Union-All), [EXCEPT](Except), [CORRESPONDING](Corresponding)

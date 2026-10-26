@@ -23,4 +23,4 @@ like:
 ```
 See the example [in jsFiddle](http://jsfiddle.net/agershun/q7pz7w60/1/)
 
-See also: [NOT IN](Not In), [EXISTS](Exists)
+See also: [NOT IN](Not-In), [EXISTS](Exists)

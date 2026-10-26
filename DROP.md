@@ -16,4 +16,4 @@ Note that `[engine]` is to be used when the database to be `DROP`ped is hosed by
 DROP INDEXEDDB DATABASE db_name
 ```
 
-See also: [DROP DATABASE](Drop Database), [DROP TABLE](Drop Table), [DROP COLUMN](Drop Column), [DROP INDEX](Drop Index)
+See also: [DROP DATABASE](Drop-Database), [DROP TABLE](Drop-Table), [DROP COLUMN](Drop-Column), [DROP INDEX](Drop-Index)

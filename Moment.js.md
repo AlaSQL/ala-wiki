@@ -6,7 +6,7 @@ You can use [Moment.js](http://momentjs.com/) library to format dates:
     alasql.fn.moment = moment; // Set moment() function available to AlaSQL
 
     var data = [{d:new Date()},{d:"2013-02-14"}];
-    var res = alasql('SELECT moment(d)->[add](1, "days")->calendar() as [When?]\
+    var res = alasql('SELECT moment(d)->[add](1,-"days")->calendar() as [When?]\
             FROM ?',[data]);
 ```
 

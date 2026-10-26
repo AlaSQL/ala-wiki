@@ -26,4 +26,4 @@ In this example field ```Orders.fruitid``` reference to ```Fruits``` table:
       );
 ```
 
-See also: [PRIMARY KEY](Primary Key)
+See also: [PRIMARY KEY](Primary-Key)

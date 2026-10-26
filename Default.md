@@ -14,4 +14,4 @@ AlaSQL supports column ```DEFAULT``` keyword:
             b INT DEFAULT 100)");
 ```
 
-See also: [INSERT DEFAULT](Insert Default)
+See also: [INSERT DEFAULT](Insert-Default)

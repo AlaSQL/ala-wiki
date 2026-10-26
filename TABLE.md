@@ -6,4 +6,4 @@ Syntax:
     DROP TABLE tableid;
 ```
 
-See also: [CREATE TABLE](Create Table), [DROP TABLE](Drop Table)
+See also: [CREATE TABLE](Create-Table), [DROP TABLE](Drop-Table)

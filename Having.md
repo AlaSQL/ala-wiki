@@ -36,4 +36,4 @@ group by id_group having count(id) = 2',[groups]);
 ```
 See this example in [jsFiddle](http://jsfiddle.net/5prbwtzy/2/)
 
-See also: [WHERE](Where), [GROUP BY](Group By)
+See also: [WHERE](Where), [GROUP BY](Group-By)

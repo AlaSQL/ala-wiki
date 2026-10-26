@@ -7,4 +7,4 @@ Syntax:
     SELECT query1 EXCEPT SELECT query 2
 ```
 
-See also: [UNION](Union), [UNION ALL](Union All), [INTERCEPT](INTERCEPT), [CORRESPONDING](Corresponding)
+See also: [UNION](Union), [UNION ALL](Union-All), [INTERCEPT](INTERCEPT), [CORRESPONDING](Corresponding)

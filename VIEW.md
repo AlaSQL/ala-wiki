@@ -6,4 +6,4 @@ Syntax:
     DROP VIEW viewid
 ```
 
-See also: [CREATE VIEW](Create View), [DROP VIEW](Drop View)
+See also: [CREATE VIEW](Create-View), [DROP VIEW](Drop-View)

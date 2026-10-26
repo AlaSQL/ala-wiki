@@ -17,7 +17,7 @@ In the following the term `sql` is ment as a string contaning SQL statements.
 
 * `alasql.exec(sql,params,callback)` - adding a 3rd parameter will run the SQL async calling the callback with one parameter (the response) when finished.
 
-* `alasql(data)` - starting poit for [fluent interface](Fluent Interface)
+* `alasql(data)` - starting poit for [fluent interface](Fluent-Interface)
 
 
 * `alasql.parse(sql)` – parse SQL to an [abstract syntax tree (ATS)](AST)
@@ -26,11 +26,11 @@ In the following the term `sql` is ment as a string contaning SQL statements.
 * `alasql.compile(sql)` – returns compiled statement (and adds it to database cache)
 
 
-* `alasql.use(databaseid)` – Equivalent to `alasql('USE '+databaseid)`. See also [the keyword USE](Use Database)
+* `alasql.use(databaseid)` – Equivalent to `alasql('USE '+databaseid)`. See also [the keyword USE](Use-Database)
 
 * `alasql.pretty(sql)` – "prettyfys" SQL statements
 
-* `alasql.options.*` - See [options](AlaSQL Options) for more inforamtion
+* `alasql.options.*` - See [options](AlaSQL-Options) for more inforamtion
 
 * `alasql.databases` - array of databases in the AlaSQL object
 

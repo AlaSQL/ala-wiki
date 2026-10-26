@@ -15,4 +15,4 @@ Now you can use databases, tables, and columns with spaces inside square bracket
     INSERT INTO [A.table] VALUES (1),(2);
     SELECT [the-column] AS [AS] FROM [My Database];
 ```
-Try this sample in [AlaSQL console](http://alasql.org/console?CREATE DATABASE [My Database];USE [My Database];CREATE TABLE [A.table] ([the-column] INT);INSERT INTO [A.table] VALUES (1),(2);SELECT [the-column] AS [AS] FROM [My Database])
+Try this sample in [AlaSQL console](http://alasql.org/console?CREATE DATABASE [My Database];USE [My Database];CREATE TABLE [A.table] ([the-column]-INT);INSERT INTO [A.table] VALUES (1),(2);SELECT [the-column] AS [AS] FROM [My Database])

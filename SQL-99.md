@@ -13,7 +13,7 @@ B016 | Embedded Pascal  | No
 B017 | Embedded PL/I 1  | No
 E011 | Numeric data types | 
 E011-01 | [INTEGER](Integer) and [SMALLINT](Smallint) data types (including all spellings) | Yes
-E011-02 | [REAL](Real), [DOUBLE PRECISON](Double Precision), and [FLOAT](Float) data types | Yes
+E011-02 | [REAL](Real), [DOUBLE PRECISON](Double-Precision), and [FLOAT](Float) data types | Yes
 E011-03 | [DECIMAL](Decimal) and [NUMERIC](Numeric) data types | No
 E011-04 | Arithmetic operators | Yes
 E011-05 | Numeric comparison | Yes
@@ -37,8 +37,8 @@ E031-02 | Lower case identifiers | Yes
 E031-03 | Trailing underscore | Yes
 E051 | Basic query specification | 
 E051-01 | SELECT [DISTINCT](Distinct) | Yes
-E051-02 | [GROUP BY](Group By) clause | Yes
-E051-04 | [GROUP BY](Group By) can contain columns not in select-list | Yes
+E051-02 | [GROUP BY](Group-By) clause | Yes
+E051-04 | [GROUP BY](Group-By) can contain columns not in select-list | Yes
 E051-05 | Select list items can be renamed | Yes
 E051-06 | [HAVING](Having) clause | Yes
 E051-07 | Qualified [](Star) in select list | Yes
@@ -60,7 +60,7 @@ E061-13 | Correlated subqueries | Yes
 E061-14 | Search condition | Yes
 E071 | Basic query expressions | 
 E071-01 | [UNION DISTINCT](Union) table operator | Yes
-E071-02 | [UNION ALL](Union All) table operator | Yes
+E071-02 | [UNION ALL](Union-All) table operator | Yes
 E071-03 | [EXCEPT DISTINCT](Except) table operator | Yes
 E071-05 | Columns combined via table operators need not have exactly the same data type | Yes
 E071-06 | Table operators in subqueries | Yes
@@ -100,13 +100,13 @@ E121-10 | FETCH statement: implicit NEXT | No
 E121-17 | WITH HOLD cursors | No
 E131 | Null value support (nulls in lieu of values) | Yes
 E141 | Basic integrity constraints | 
-E141-01 | [NOT NULL](Not Null) constraints | Yes
-E141-02 | [UNIQUE](Unique) constraints of [NOT NULL](Not NUll) columns | Yes
-E141-03 | [PRIMARY KEY](Primary Key) constraints | Yes
+E141-01 | [NOT NULL](Not-Null) constraints | Yes
+E141-02 | [UNIQUE](Unique) constraints of [NOT NULL](Not-NUll) columns | Yes
+E141-03 | [PRIMARY KEY](Primary-Key) constraints | Yes
 E141-04 | Basic FOREIGN KEY constraint with the NO ACTION default | Yes
 E141-06 | [CHECK](Check) constraints | Yes
 E141-07 | [Column defaults](Defeult) | Yes
-E141-08 | [NOT NULL](Not Null) inferred on [PRIMARY KEY](Primary Key) | ?
+E141-08 | [NOT NULL](Not-Null) inferred on [PRIMARY KEY](Primary-Key) | ?
 E141-10 | Names in a foreign key can be specified in any order | ?
 E151 | Transaction support | 
 E151-01 | [COMMIT](Commit) statement | No
@@ -125,18 +125,18 @@ F021-04 | TABLE_CONSTRAINTS view | No
 F021-05 | REFERENTIAL_CONSTRAINTS view | No
 F021-06 | CHECK_CONSTRAINTS view | No
 F031 | Basic schema manipulation | 
-F031-01 | [CREATE TABLE](Create Table) statement to create persistent base tables | Yes
-F031-02 | [CREATE VIEW](Create View) statement | Yes
+F031-01 | [CREATE TABLE](Create-Table) statement to create persistent base tables | Yes
+F031-02 | [CREATE VIEW](Create-View) statement | Yes
 F031-03 | [GRANT](Grant) statement | No
-F031-04 | [ALTER TABLE](Alter table) statement: [ADD COLUMN](Add Column) clause | Partial
-F031-13 | [DROP TABLE](Drop Table) statement: RESTRICT clause | Partial
-F031-16 | [DROP VIEW](Drop View) statement: RESTRICT clause | Partial
+F031-04 | [ALTER TABLE](Alter-table) statement: [ADD COLUMN](Add-Column) clause | Partial
+F031-13 | [DROP TABLE](Drop-Table) statement: RESTRICT clause | Partial
+F031-16 | [DROP VIEW](Drop-View) statement: RESTRICT clause | Partial
 F031-19 | REVOKE statement: RESTRICT clause | No
 F041 | Basic joined table | 
-F041-01 | [Inner join](Inner Join) (but not necessarily the INNER keyword) | Yes
+F041-01 | [Inner join](Inner-Join) (but not necessarily the INNER keyword) | Yes
 F041-02 | [INNER](Inner) keyword | Yes
-F041-03 | [LEFT OUTER JOIN](Left Join) | Yes
-F041-04 | [RIGHT OUTER JOIN](Right Join) | Yes
+F041-03 | [LEFT OUTER JOIN](Left-Join) | Yes
+F041-04 | [RIGHT OUTER JOIN](Right-Join) | Yes
 F041-05 | Outer joins can be nested | ?
 F041-07 | The inner table in a left or right outer join can also be used in an inner join | ?
 F041-08 | All comparison operators are supported (rather than just =) | Yes
@@ -151,11 +151,11 @@ F051-07 | LOCALTIME | No
 F051-08 | LOCALTIMESTAMP | No
 F081 | [UNION](Union) and [EXCEPT](Except) in views | ?
 F131 | Grouped operations | 
-F131-01 | [WHERE](Where), [GROUP BY](Group By), and [HAVING](Having) clauses supported in queries with grouped views | Yes
+F131-01 | [WHERE](Where), [GROUP BY](Group-By), and [HAVING](Having) clauses supported in queries with grouped views | Yes
 F131-02 | Multiple tables supported in queries with grouped views | Yes
 F131-03 | Set functions supported in queries with grouped views | Yes
-F131-04 | Subqueries with [GROUP BY](Group By) and HAVING clauses and grouped views | Yes
-F131-05 | Single row [SELECT](Select) with [GROUP BY](Group By) and [HAVING](Having) clauses and grouped views | Yes
+F131-04 | Subqueries with [GROUP BY](Group-By) and HAVING clauses and grouped views | Yes
+F131-05 | Single row [SELECT](Select) with [GROUP BY](Group-By) and [HAVING](Having) clauses and grouped views | Yes
 F181 | Multiple module support | No
 F201 | [CAST](Cast) function | Yes
 F221 | Explicit defaults | Yes
@@ -165,9 +165,9 @@ F261-02 | Searched CASE | Yes
 F261-03 | [NULLIF](Nulif) | Yes
 F261-04 | [COALESCE](Coalesce) | Yes
 F311 | Schema definition statement | 
-F311-01 | [CREATE SCHEMA](Create Schema) | Partial
-F311-02 | [CREATE TABLE](Create Table) for persistent base tables | Yes
-F311-03 | [CREATE VIEW](Create View) | Yes
+F311-01 | [CREATE SCHEMA](Create-Schema) | Partial
+F311-02 | [CREATE TABLE](Create-Table) for persistent base tables | Yes
+F311-03 | [CREATE VIEW](Create-View) | Yes
 F311-04 | CREATE VIEW: WITH CHECK OPTION | No (only syntax)
 F311-05 | [GRANT](Grant) statement | No
 F471 | Scalar subquery values | Yes

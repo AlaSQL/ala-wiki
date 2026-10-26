@@ -7,4 +7,4 @@ Syntax:
     );
 ```
 
-See also: [FOREIGN KEY](Foreign Key)
+See also: [FOREIGN KEY](Foreign-Key)

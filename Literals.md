@@ -21,4 +21,4 @@ If you want to use other characters and spaces, please use square brackets ```[ 
     SELECT [My column] FROM `Моя табличка-1234()` ORDER BY [今日]
 ```
 
-See also: [Case sensivity in AlaSQL](Case Sensitive)
+See also: [Case sensivity in AlaSQL](Case-Sensitive)

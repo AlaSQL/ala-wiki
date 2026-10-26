@@ -12,12 +12,12 @@ AlaSQL supports fluent like LINQ interface:
 ```
 
 ## Supported functions
-* [Select()](Select Fluent)
-* [From()](From Fluent)
-* [GroupBy()](GroupBy Fluent)
-* [Having()](Having Fluent)
-* [OrderBy()](OrderBy Fluent)
-* [Top()](Top Fluent)
+* [Select()](Select-Fluent)
+* [From()](From-Fluent)
+* [GroupBy()](GroupBy-Fluent)
+* [Having()](Having-Fluent)
+* [OrderBy()](OrderBy-Fluent)
+* [Top()](Top-Fluent)
 
 
 

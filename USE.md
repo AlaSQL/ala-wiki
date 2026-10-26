@@ -14,4 +14,4 @@ Example:
     USE mybase;
 ```
 
-See also: [CREATE DATABASE](Create Database), [ATTACH DATABASE](Attach Database)
+See also: [CREATE DATABASE](Create-Database), [ATTACH DATABASE](Attach-Database)

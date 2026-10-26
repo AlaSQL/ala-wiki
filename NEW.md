@@ -8,4 +8,4 @@ You need to register JavaScript class with ```alasql.fn``` variable:
     alasql('SELECT NEW MyClass()');
 ```
 
-See also: [User-defined functions](User-defined functions)
+See also: [User-defined functions](User-defined-functions)

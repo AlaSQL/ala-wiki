@@ -1,5 +1,5 @@
 # Keyword `FOREIGN`
 
-Part of [FOREIGN KEY](Foreign Key) constraint.
+Part of [FOREIGN KEY](Foreign-Key) constraint.
 
-See also: [FOREIGN KEY](Foreign Key)
+See also: [FOREIGN KEY](Foreign-Key)

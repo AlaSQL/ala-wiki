@@ -7,4 +7,4 @@ Syntax:
     SELECT ... FROM table1 NATURAL JOIN table2
 ```
 
-See also: [NATURAL JOIN](Natural Join), [USING](Using)
+See also: [NATURAL JOIN](Natural-Join), [USING](Using)

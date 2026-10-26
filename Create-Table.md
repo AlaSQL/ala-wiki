@@ -29,7 +29,7 @@ For tables with unknown columns skip column definition part:
 ### Columns data types
 You can define data types for each column.
 
-Also you can use columns without [data types](Data Types):
+Also you can use columns without [data types](Data-Types):
 ```js
     alasql('CREATE DATABASE test252; USE test252;');
     alasql('CREATE TABLE sqlite_sequence(name,seq)');
@@ -47,7 +47,7 @@ returns:
 You can use the following types of constraints:
 * [AUTO_INCREMENT](Identity), [AUTOINCREMENT](Identity), or [IDENTITY](Identity)
 * [CHECK](Check)
-* [PRIMARY KEY](Primary Key)
-* [FOREIGN KEY](Foreign Key)
+* [PRIMARY KEY](Primary-Key)
+* [FOREIGN KEY](Foreign-Key)
 
-See also: [DROP TABLE](Drop Table)
+See also: [DROP TABLE](Drop-Table)

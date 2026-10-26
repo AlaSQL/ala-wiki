@@ -7,4 +7,4 @@ Syntax:
     SELECT ... ORDER BY expression DESC,...
 ```
 
-See also: [ASC](Asc), [ORDER BY](Order By)
+See also: [ASC](Asc), [ORDER BY](Order-By)

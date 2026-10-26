@@ -7,4 +7,4 @@ Syntax:
     DETACH DATABASE alias;
 ```
 
-See also: [DETACH DATABASE](Detach Database)
+See also: [DETACH DATABASE](Detach-Database)

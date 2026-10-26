@@ -8,4 +8,4 @@ Syntax:
     ALTER TABLE oldname RENAME TO newname
 ```
 
-Please see: [ALTER TABLE](Alter Table), [ADD COLUMN](Add Column), [RENAME TABLE](Rename Table)
+Please see: [ALTER TABLE](Alter-Table), [ADD COLUMN](Add-Column), [RENAME TABLE](Rename-Table)

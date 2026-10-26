@@ -2,4 +2,4 @@
 
 Supported by AlaSQL.
 
-See also: [IS NULL](Is Null)
+See also: [IS NULL](Is-Null)

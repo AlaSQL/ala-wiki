@@ -25,4 +25,4 @@ RENAME TO
    alasql('ALTER TABLE City RENAME TO Capital');
 ```
 
-See also: [ADD COLUMN](Add Column), [RENAME TABLE](Rename Table)
+See also: [ADD COLUMN](Add-Column), [RENAME TABLE](Rename-Table)

@@ -1,3 +1,3 @@
 # Keyword `REMOVE`
 
-Please see: [REMOVE COLUMN](Remove Column)
+Please see: [REMOVE COLUMN](Remove-Column)

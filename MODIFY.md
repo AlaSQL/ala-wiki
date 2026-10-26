@@ -1,3 +1,3 @@
 # Keyword `MODIFY`
 
-See also: [ALTER TABLE](Alter Table)
+See also: [ALTER TABLE](Alter-Table)

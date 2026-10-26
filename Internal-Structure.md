@@ -9,5 +9,5 @@
 * objects - list of document and graph objects
 
 Classes
-* [Database class](Database Class)
-* [Transaction class](Transaction Class)
+* [Database class](Database-Class)
+* [Transaction class](Transaction-Class)

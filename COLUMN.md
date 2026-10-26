@@ -21,4 +21,4 @@ You can set query modifier for all SELECTs:
 
 
 
-See also: [ADD COLUMN](Add Column), [REMOVE COLUMN](Remove Column), [RECORDSET](Recordset), [VALUE](Value), [ROW](Row)
+See also: [ADD COLUMN](Add-Column), [REMOVE COLUMN](Remove-Column), [RECORDSET](Recordset), [VALUE](Value), [ROW](Row)

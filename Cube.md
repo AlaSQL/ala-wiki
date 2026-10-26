@@ -15,4 +15,4 @@ res = alasql('SELECT Phase, Step, SUM(Val) AS Val FROM ? \
 
 Try this example [in jsFiddle](http://jsfiddle.net/agershun/1nccgs6n/2/)
 
-See also: [ROLLUP](Rollup), [GROUPING SETS](Grouping Sets), [GROUP BY](Group By)
+See also: [ROLLUP](Rollup), [GROUPING SETS](Grouping-Sets), [GROUP BY](Group-By)

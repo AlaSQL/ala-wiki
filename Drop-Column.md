@@ -5,4 +5,4 @@ Syntax:
     ALTER TABLE tableid DROP COLUMN columnid
 ```
 
-See also: [ALTER TABLE](Alter Table)
+See also: [ALTER TABLE](Alter-Table)

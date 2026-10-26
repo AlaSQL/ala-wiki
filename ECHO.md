@@ -7,4 +7,4 @@ Syntax when echo [plugin]
     ECHO expression
 ```
 
-See also [Echo Plugin](Echo Plugin)
+See also [Echo Plugin](Echo-Plugin)

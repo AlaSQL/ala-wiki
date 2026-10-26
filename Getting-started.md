@@ -10,7 +10,7 @@ In browser:
         alasql('CREATE TABLE one (two INT)');
     </script>
 ```
-_Try this sample in [AlaSQL console](http://alasql.org/console?CREATE TABLE one (two INT))_
+_Try this sample in [AlaSQL console](http://alasql.org/console?CREATE TABLE one (two-INT))_
 
 
 or in Node.js:

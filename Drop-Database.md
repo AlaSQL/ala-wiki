@@ -9,4 +9,4 @@ For example:
     alasql('DROP DATABASE mydb');
 ```
 
-See also: [CREATE DATABASE](Create Database)
+See also: [CREATE DATABASE](Create-Database)

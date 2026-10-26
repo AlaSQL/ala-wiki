@@ -17,12 +17,12 @@ Syntax:
     alasql('INSERT INTO city ("Paris",3500000)');
 ```
 
-[INSERT DEFAULT VALUES](Insert Default Values)
+[INSERT DEFAULT VALUES](Insert Default-Values)
 ```js
     alasql('INSERT INTO city DEFAULT VALUES');
 ```
 
-[INSERT SELECT](Insert Select) (equivalent of SELECT INTO)
+[INSERT SELECT](Insert-Select) (equivalent of SELECT INTO)
 ```js
     alasql('INSERT INTO city SELECT capital AS name FROM country GROUP BY capital;');
 ```
@@ -32,4 +32,4 @@ An `INSERT` statement will return the amount of rows inserted by the statment.
 
 ----
 
-See also: [INTO](Into), [SELECT INTO](Select Into)
+See also: [INTO](Into), [SELECT INTO](Select-Into)

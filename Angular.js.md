@@ -24,7 +24,7 @@ Another example: [Calculating average of array](http://jsfiddle.net/1thLzj4a/)
 
 If AlaSQL recognize Angular.js it removes ```$$hashKey``` artefacts from the exporting arrays.
 
-To remove other artefact fields you can use [REMOVE COLUMNS](Remove Columns) clause.
+To remove other artefact fields you can use [REMOVE COLUMNS](Remove-Columns) clause.
 
 (Source: [AlaSQL Group](https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!msg/alasql/w9uavEdVHAU/k4KXf2Pv3WoJ) by **Built with AngularJS Application**)
 

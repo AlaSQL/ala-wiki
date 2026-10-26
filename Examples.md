@@ -21,7 +21,7 @@ type in browser "http://127.0.0.1:1337/?SELECT VALUE 2*2" )
 
 
 Other examples:
-* [World database](http://alasql.org/console?source 'world.sql';select top 10 * from City) - [source](console/index.html)
+* [World database](http://alasql.org/console?source 'world.sql';select top 10 * from-City) - [source](console/index.html)
 
 * Mini-ETL: [upload CSV data to IndexedDB database](http://alasql.org/demo/001csv/)
 * [More than 200 of AlaSQL tests](test)

@@ -10,4 +10,4 @@ For example:
     alasql('DROP TABLE star');
 ```
 
-See also: [CREATE TABLE](Create Table)
+See also: [CREATE TABLE](Create-Table)

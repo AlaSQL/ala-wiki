@@ -7,7 +7,7 @@ Syntax:
     REQUIRE std-plugin, "filename.js", ...
 ```
 
-The list of [standard plugins](Standard Plugins).
+The list of [standard plugins](Standard-Plugins).
 
 Example:
 ```sql
